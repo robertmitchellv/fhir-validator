@@ -4,7 +4,23 @@ The [FHIR Validator](https://github.com/hapifhir/org.hl7.fhir.core/releases/late
 
 ## Dependencies
 
-A Java Develpment Kit (JDK) is required to run the validator. The validator is tested to run on all currently support LTS versions of Java (at the time of writing this documentation, JDK 11 and 17)
+A Java Development Kit (JDK) is required to run the validator. The validator is tested to run on all currently support LTS versions of Java (at the time of writing this documentation, JDK 11 and 17).
+
+You will also need to download and place the `validator_cli.jar` file in the root of this repository:
+
+```
+.
+├── fhir-bundles
+│   ├── Bundle-bundle-ecr-message-zika.json
+│   ├── ...
+│   └── eICR_TC-Routing_VPD-bundle.json
+├── README.md
+├── terminology_log.txt
+├── validate.sh
+├── validation_output.html
+├── validation_output.xml
+└── validator_cli.jar
+```
 
 ## Running the FHIR Validator
 
@@ -29,10 +45,9 @@ java -jar validator_cli.jar fhir-bundles/fhir-bundle-to-validate.json -ig hl7.fh
 
 There is also a `validate.sh` script that can be leveraged to make running the validator easier. To use it simple run:
 
-````bash
 ```bash
 ./validate.sh fhir-bundles/fhir-bundle.json
-````
+```
 
 ## Sample FHIR Bundles
 
