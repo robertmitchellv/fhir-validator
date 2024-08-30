@@ -27,8 +27,18 @@ You will also need to download and place the `validator_cli.jar` file in the roo
 An example of how to run the command to test against the eCR FHIR IG::
 
 ```bash
-java -jar validator_cli.jar fhir-bundles/fhir-bundle-to-validate.json -ig hl7.fhir.us.ecr\#2.1.2 -version 4.0.1 -output validation_output.xml -html-output validation_output.html -txLog terminology_log.txt -level warnings
+java -jar validator_cli.jar \
+  fhir-bundles/fhir-bundle-to-validate.json \
+  -ig hl7.fhir.us.ecr\#2.1.2 \
+  -version 4.0.1 \
+  -output validation_output.xml \
+  -html-output validation_output.html \
+  -txLog terminology_log.txt \
+  -level warnings
 ```
+
+> [!IMPORTANT]
+> The command will download files and save them to `~/.fhir/` so be aware that the first time you run this command it will take longer to retrieve all of the required files.
 
 ### Command Breakdown
 
