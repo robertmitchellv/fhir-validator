@@ -38,7 +38,7 @@ java -jar validator_cli.jar \
 ```
 
 > [!IMPORTANT]
-> The command will download files and save them to `~/.fhir/` so be aware that the first time you run this command it will take longer to retrieve all of the required files.
+> The command will download files and save them to `~/.fhir/` so be aware that the first time you run this command it will take longer to retrieve all the required files.
 
 ### Command Breakdown
 
