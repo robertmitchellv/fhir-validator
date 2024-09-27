@@ -1,0 +1,67 @@
+{
+  "resourceType": "Bundle",
+  "id": "eicr-rr-batch-condition",
+  "type": "batch",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:456e4567-e89b-12d3-a456-426614174003",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "eicr-rr-condition",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis",
+                "display": "Encounter Diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "840539006",
+              "display": "COVID-19"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-saga-anderson"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-eicr-saga-anderson"
+        },
+        "onsetDateTime": "2021-08-02T09:15:00Z",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated Narrative for Condition</div>"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/condition-covid19"
+      }
+    }
+  ]
+}
