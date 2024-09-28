@@ -66,16 +66,6 @@ There is also a `validate.sh` script that can be leveraged to make running the v
 
 Information about where the sample FHIR bundles in the `fhir-bundles` directory are sourced from:
 
-| File Name                                      | Description                                                                                  |
-| ---------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| `Bundle-bundle-ecr-message-zika.json`          | Zika FHIR Bundle from the eCR 2.1.2 spec                                                     |
-| `Bundle-bundle-eicr-document-zika.json`        | Zika FHIR Document from the eCR 2.1.2 spec                                                   |
-| `eICR-TC-COVID-DX_20210412-bundle.json`        | COVID DX FHIR Bundle from Microsoft FHIR-Converter with custom eCR liquid template           |
-| `eICR-TC-COVID-LabNeg_20210412-bundle.json`    | COVID Lab Negative FHIR Bundle from Microsoft FHIR-Converter with custom eCR liquid template |
-| `eICR-TC-COVID-Lab-Order_20210412-bundle.json` | COVID Lab Order FHIR Bundle from Microsoft FHIR-Converter with custom eCR liquid template    |
-| `eICR-TC-COVID-LabPos_20210412-bundle.json`    | COVID Lab Positive FHIR Bundle from Microsoft FHIR-Converter with custom eCR liquid template |
-| `eICR-TC-COVID-Problem_20210412-bundle.json`   | COVID Problem FHIR Bundle from Microsoft FHIR-Converter with custom eCR liquid template      |
-| `eICR_TC-DeDup1_Lab_Order-bundle.json`         | DeDup Lab Order FHIR Bundle from Microsoft FHIR-Converter with custom eCR liquid template    |
-| `eICR_TC-DeDup2_Lab_Result-bundle.json`        | DeDup Lab Result FHIR Bundle from Microsoft FHIR-Converter with custom eCR liquid template   |
-| `eICR_TC-eCR-Routing_STI-bundle.json`          | eCR Routing STI FHIR Bundle from Microsoft FHIR-Converter with custom eCR liquid template    |
-| `eICR_TC-Routing_VPD-bundle.json`              | eCR Routing VPD FHIR Bundle from Microsoft FHIR-Converter with custom eCR liquid template    |
+- `dibbs-converted` bundles are produced from the DIBBs `fhir-converter` API that use a custom created Liquid template that the Microsoft FHIR-Converter uses to convert CDA eICR and CDA RR XML files to FHIR.
+- `ecr-ig` contains all of the example data from the eCR FHIR IG.
+- The bundles that are in the `fhir-bundles` directory are created as a way to show how you can use the eICR and RR profiles from the eCR FHIR IG to create a single batch bundle that contains parts of the FHIR documents to support true to the spec FHIR, bundles that can be stored in a FHIR server (like HAPI), and additionally can be consumed by the DIBBs APIs.
