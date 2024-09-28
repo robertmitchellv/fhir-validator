@@ -22,425 +22,182 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results</h1>
- <p>65 errors, 66 warnings, 4 hints. Generated Aug 30, 2024, 1:33:06 PM by Validator Version 6.3.22 (Git# 0bdba83faf2f). Built 2024-08-27T21:25:29.922Z (64 hours old) (25167ms)</p>
+ <p>8 errors, 46 warnings, 0 hints. Generated Sep 27, 2024, 10:08:50 PM by Validator Version 6.3.29 (Git# 53ec74518475). Built 2024-09-26T12:30:54.127Z (33 hours old) (3680ms)</p>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#;1"><b>fhir-bundles/Bundle-bundle-eicr-document-zika.json</b></a></td><td><b>65</b></td><td><b>66</b></td><td><b>4</b></td>
+     <td><a href="#;1"><b>fhir-bundles/eicr-rr-batch-bundle.json</b></a></td><td><b>8</b></td><td><b>46</b></td><td><b>0</b></td>
    </tr>
 </table>
 <hr/>
 <a name="l1"> </a>
-<h2><a href="file:fhir-bundles/Bundle-bundle-eicr-document-zika.json">fhir-bundles/Bundle-bundle-eicr-document-zika.json</a></h2>
+<h2><a href="file:fhir-bundles/eicr-rr-batch-bundle.json">fhir-bundles/eicr-rr-batch-bundle.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.text.div (l26/c1642)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Encounter_encounter-eicr-eve-everywoman-outpatient' at 'div/p/a' for 'See above (Encounter/encounter-eicr-eve-everywoman-outpatient: Ambulatory Office Visit)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.text.div (l26/c1642)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#PractitionerRole_practitionerrole-henry-seven' at 'div/p/a' for 'See above (PractitionerRole/practitionerrole-henry-seven: Henry Seven, MD)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.text.div (l26/c1642)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Organization_organization-ecr-salem-medical-center' at 'div/p/a' for 'See above (Organization/organization-ecr-salem-medical-center: Salem Medical Center)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.type.coding[0].display (l36/c8)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Public Health Case Report' for http://loinc.org#55751-2. Valid display is one of 0 choices: 'Public health Case report' (en-US), 'Public health Case report' (en-US), 'Public health Case rprt' (en-US) or 'Reporte de un caso:{Configuración} :Punto temporal:Tipo:Documento:Public health' (es-MX) (for the language(s) 'english')</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.section[0].code.coding[0].display (l63/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Reason for visit Narrative' for http://loinc.org#29299-5. Valid display is one of 0 choices: 'Reason for visit Narrative' (en-US), 'Reason for visit Narrative' (en-US), 'Reason for visit' (en-US), 'Razón de la visita: Paciente:Punto temporal:Tipo:Narrativo:' (es-MX), 'motivo de la consulta:hallazgo:punto en el tiempo:^paciente:Narrativo:' (es-AR), 'Reason for visit' (pt-BR) or 'Reden voor bezoek [bevinding] (tekstueel)' (nl-NL) (for the language(s) 'english')</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.section[1].code.coding[0].display (l77/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Chief complaint Narrative - Reported' for http://loinc.org#10154-3. Valid display is one of 0 choices: 'Chief complaint Narrative - Reported' (en-US), 'Chief complaint Narrative - Reported' (en-US), 'Chief complaint Reported' (en-US), 'Queja principal: Paciente:Punto temporal:Tipo:Narrativo:Reported' (es-MX), 'motivo de consulta principal:hallazgo:punto en el tiempo:^paciente:Narrativo:informado' (es-AR) or 'Belangrijkste klacht [bevinding] d.m.v. rapportage (tekstueel)' (nl-NL) (for the language(s) 'english')</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.section[2].code.coding[0].display (l91/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'History of Present illness Narrative' for http://loinc.org#10164-2. Valid display is one of 0 choices: 'History of Present illness Narrative' (en-US), 'History of Present illness Narrative' (en-US), 'Hx of Pres illness' (en-US), 'Enfermedad presente: Paciente:Punto temporal:Hx:Narrativo:' (es-MX), 'antecedentes de la enfermedad actual:hallazgo:punto en el tiempo:^paciente:Narrativo:informado' (es-AR), 'Anamnese der aktuellen Krankheit - Freitext' (de-DE) or 'Huidige ziekte [voorgeschiedenis] (tekstueel)' (nl-NL) (for the language(s) 'english')</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.section[3].code.coding[0].display (l105/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Problem list - Reported' for http://loinc.org#11450-4. Valid display is one of 0 choices: 'Problem list - Reported' (en-US), 'Problem list - Reported' (en-US), 'Problem list Reported' (en-US), 'Lista de problemas: Paciente:Punto temporal:Tipo:Nominal:Reported' (es-MX), 'lista de problemas:hallazgo:punto en el tiempo:^paciente:Nominal:informado' (es-AR), 'Problem list Reported' (pt-BR), 'Problemliste - Berichtet' (de-DE) or 'Probleemlijst [bevinding] d.m.v. rapportage' (nl-NL) (for the language(s) 'english')</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.section[4].code.coding[0].display (l123/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Medication administered Narrative' for http://loinc.org#29549-3. Valid display is one of 0 choices: 'Medication administered Narrative' (en-US), 'Medication administered Narrative' (en-US), 'Medication administered' (en-US), 'Medicación administrada: Paciente:Punto temporal:Tipo:Narrativo:' (es-MX), 'medicación administrada:tipo:punto en el tiempo:^paciente:Narrativo:' (es-AR) or 'Medication administered' (pt-BR) (for the language(s) 'english')</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.section[5].code.coding[0].display (l141/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Medications on admission (narrative)' for http://loinc.org#42346-7. Valid display is one of 0 choices: 'Medications on admission (narrative)' (en-US), 'Medications on admission (narrative)' (en-US) or 'Medikation bei Aufnahme - Freitext' (de-DE) (for the language(s) 'english')</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.section[6].code.coding[0].display (l159/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'History of Medication use Narrative' for http://loinc.org#10160-0. Valid display is one of 0 choices: 'History of Medication use Narrative' (en-US), 'History of Medication use Narrative' (en-US), 'Hx of Medication use' (en-US), 'Uso de medicación: Paciente:Punto temporal:Hx:Narrativo:' (es-MX), 'antecedentes de consumo de medicaciones:hallazgo:punto en el tiempo:^paciente:Narrativo:informado' (es-AR), 'Medikationsanamnese - Freitext' (de-DE) or 'Medicijngebruik [voorgeschiedenis] (tekstueel)' (nl-NL) (for the language(s) 'english')</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.section[7].code.coding[0].display (l177/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Relevant diagnostic tests/laboratory data Narrative' for http://loinc.org#30954-2. Valid display is one of 0 choices: 'Relevant diagnostic tests/laboratory data Narrative' (en-US), 'Relevant diagnostic tests/laboratory data Narrative' (en-US), 'Relevant Dx tests/lab data' (en-US), 'Pruebas de diagnóstico o datos de laboratorio relevantes: Paciente:Punto temporal:Tipo:Narrativo:' (es-MX), 'pruebas diagnósticas relevantes y/o información de laboratorio:hallazgo:punto en el tiempo:^paciente:Narrativo:' (es-AR), 'Relevant Dx tests/lAc data' (pt-BR), 'Relevante diagnostische Tests/Labordaten - Freitext' (de-DE) or 'Relevante diagnostische tests en/of laboratoriumgegevens [bevinding] (tekstueel)' (nl-NL) (for the language(s) 'english')</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.section[8].code.coding[0].display (l195/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Plan of care note' for http://loinc.org#18776-5. Valid display is one of 0 choices: 'Plan of care note' (en-US), 'Plan of care note' (en-US), 'Plan of care note' (en-US), 'Y' (en-US), 'Nota del plan de cuidados:{Configuración} :Punto temporal:Tipo:Documento:{Role}' (es-MX), 'plan de tratamiento:hallazgo:punto en el tiempo:plan de tratamiento:Narrativo:' (es-AR), 'Behandlungsplan - Notiz' (de-DE) or 'Behandelplan [bevinding] in {instelling} d.m.v. {rol} (document)' (nl-NL) (for the language(s) 'english')</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.section[8].entry[0].extension[0].extension[2].value.ofType(Coding).display (l219/c16)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Zika virus envelope E gene [Presence] in Serum by NAA with probe detection' for http://loinc.org#80825-3. Valid display is one of 0 choices: 'Zika virus envelope E gene [Presence] in Serum by NAA with probe detection' (en-US), 'Zika virus envelope E gene [Presence] in Serum by NAA with probe detection' (en-US), 'Zika E gene Ser Ql NAA+probe' (en-US), 'Zika virus E gene, Blood' (en-US), 'Gen de la envoltura (E) del virus del Zika: Suero : Punto temporal: Presencia o umbral: Ordinal: Amplificación de ácidos nucleicos con detección de sonda' (es-MX), 'Zika-Virus envelope-E-Gen [Nachweis] in Serum mittels Nukleinsäureamplifikation mit Sondendetektion' (de-DE), 'Zikavirus envelop (E) gen [aanwezigheid] in serum d.m.v. probe-detectie' (nl-NL) or 'Zika Virus (Envelope-Gen) qualitativ PCR' (de-AT) (for the language(s) 'english')</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.section[9].code.coding[0].display (l232/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'History of Immunization Narrative' for http://loinc.org#11369-6. Valid display is one of 0 choices: 'History of Immunization Narrative' (en-US), 'History of Immunization Narrative' (en-US), 'Hx of Immunization' (en-US), 'Inmunización: Paciente:Punto temporal:Hx:Narrativo:' (es-MX), 'antecedente de inmunización:hallazgo:punto en el tiempo:^paciente:Narrativo:informado' (es-AR), 'Impfanamnese - Freitext' (de-DE), 'Inenting [voorgeschiedenis] (tekstueel)' (nl-NL) or 'Immunisierungsstatus' (de-AT) (for the language(s) 'english')</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.section[10].code.coding[0].display (l254/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'History of Procedures Document' for http://loinc.org#47519-4. Valid display is one of 0 choices: 'History of Procedures Document' (en-US), 'History of Procedures Document' (en-US), 'Procedures Hx Doc' (en-US), 'Historia de los procedimientos:{Configuración} :Punto temporal:Tipo:Documento:{Role}' (es-MX), 'Procedures Hx Doc' (pt-BR), 'Anamnese der Maßnahmen - Dokument' (de-DE) or 'Voorgeschiedenis met verrichtingen [bevinding] in {instelling} d.m.v. {rol} (document)' (nl-NL) (for the language(s) 'english')</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.section[11].code.coding[0].display (l272/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Vital signs' for http://loinc.org#8716-3. Valid display is one of 0 choices: 'Vital signs' (en-US), 'Vital signs' (en-US), 'Vital signs' (en-US), 'Signos vitales: Paciente:Punto temporal:Tipo:Narrativo:Observed' (es-MX), 'hallazgos físicos:hallazgo:punto en el tiempo:signos vitales:Narrativo:observado' (es-AR), 'Vital signs' (pt-BR), 'Vitalparameter' (de-DE) or 'Vitale functies [bevinding] d.m.v. observatie (tekstueel)' (nl-NL) (for the language(s) 'english')</b></td>
-   </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.section[12].code.coding[0].display (l290/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Social history Narrative' for http://loinc.org#29762-2. Valid display is one of 0 choices: 'Social history Narrative' (en-US), 'Social history Narrative' (en-US), 'Social Hx' (en-US), 'Historia social: Paciente:Punto temporal:Tipo:Narrativo:' (es-MX), 'antecedentes sociales:hallazgo:punto en el tiempo:^paciente:Narrativo:' (es-AR), 'Social Hx' (pt-BR), 'Sozialanamnese - Freitext' (de-DE) or 'Sociale geschiedenis [bevinding] (tekstueel)' (nl-NL) (for the language(s) 'english')</b></td>
+     <td><b>Bundle.entry[1].resource/*Practitioner/practitioner-emma-nelson-001*/.identifier[0].type (l241/c14)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v2-0203#NPI)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.section[13].code.coding[0].display (l324/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Pregnancy summary Document' for http://loinc.org#90767-5. Valid display is one of 0 choices: 'Pregnancy summary Document' (en-US), 'Pregnancy summary Document' (en-US), 'Pregnancy summary Doc' (en-US), 'Resumen de embarazo: Paciente:Punto temporal:Tipo:Documento:' (es-MX) or 'Übersicht der Schwangerschaft - Dokument' (de-DE) (for the language(s) 'english')</b></td>
+     <td><b>Bundle.entry[2].resource/*Organization/organization-nelson-family-practice-001*/.identifier[0].type (l296/c14)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v2-0203#NPI)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.section[14].code.coding[0].display (l342/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Public health Note' for http://loinc.org#83910-0. Valid display is one of 0 choices: 'Public health Note' (en-US), 'Public health Note' (en-US), 'Public health Note' (en-US), 'Nota:{Configuración} :Punto temporal:Tipo:Documento:Public health' (es-MX) or 'Verslag [bevinding] in {instelling} d.m.v. volksgezondheid (document)' (nl-NL) (for the language(s) 'english')</b></td>
+     <td><b>Bundle.entry[2].resource/*Organization/organization-nelson-family-practice-001*/.meta.profile[0] (l283/c8)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_ERROR"><b>Profile reference 'http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-organization' has not been checked because it could not be found, and fetching it resulted in the error org.hl7.fhir.r4.utils.client.EFhirClientException: Error reading Http Response from http://hl7.org/fhir/us/ecr: Error parsing JSON source: Unexpected char 'T' in json stream at Line 1 (path=[null])</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.section[15].code.coding[0].display (l360/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'History of Past illness Narrative' for http://loinc.org#11348-0. Valid display is one of 0 choices: 'History of Past illness Narrative' (en-US), 'History of Past illness Narrative' (en-US), 'Hx of Past illness' (en-US), 'Enfermedad pasada: Paciente:Punto temporal:Hx:Narrativo:' (es-MX), 'antecedentes de enfermedades pasadas:hallazgo:punto en el tiempo:^paciente:Narrativo:informado' (es-AR), 'Anamnese früherer Krankheiten - Freitext' (de-DE) or 'Ziektegeschiedenis [voorgeschiedenis] (tekstueel)' (nl-NL) (for the language(s) 'english')</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.section[16].code.coding[0].display (l374/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Review of systems Narrative - Reported' for http://loinc.org#10187-3. Valid display is one of 0 choices: 'Review of systems Narrative - Reported' (en-US), 'Review of systems Narrative - Reported' (en-US), 'Review of systems' (en-US), 'Revisión de sistemas: Paciente:Punto temporal:Tipo:Narrativo:Reported' (es-MX), 'revisión de sistemas:hallazgo:punto en el tiempo:^paciente:Narrativo:informado' (es-AR) or 'Beoordeling van systemen [bevinding] d.m.v. rapportage (tekstueel)' (nl-NL) (for the language(s) 'english')</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.encounter (l47/c8)</b></td><td><b>error</b></td><td title="Reference_REF_CantMatchChoice"><b>Unable to find a match for profile Encounter/encounter-eicr-eve-everywoman-outpatient among choices: http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-encounter</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.author[0] (l52/c8)</b></td><td><b>error</b></td><td title="Reference_REF_CantMatchChoice"><b>Unable to find a match for profile PractitionerRole/practitionerrole-henry-seven among choices: http://hl7.org/fhir/StructureDefinition/Device, http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner, http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-organization, http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-practitionerrole</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.section[3] (l103/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.section:sliceProblemSection.entry:sliceEICRCondition': minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.section[7] (l175/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.section:sliceResultsSection.entry:sliceUSCoreObservationResults': minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.section[9] (l230/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.section:sliceImmunizationsSection.entry:sliceUSCoreImmunization': minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.section[10] (l252/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.section:sliceProceduresSection.entry:sliceEICRProcedure': minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[0].resource/*Composition/composition-eicr-zika*/.section[13] (l322/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.section:slicePregnancySection.entry:slicePregnancyStatusObservation': minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1].resource.text.div (l401/c2077)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[2].resource/*Procedure/us-ph-procedure-ecmo*/.text.div (l458/c1514)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[2].resource/*Procedure/us-ph-procedure-ecmo*/.text.div (l458/c1514)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Device_device-ecmo' at 'div/table/tr/td/a' for 'See above (Device/device-ecmo)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[2].resource.text.div (l458/c1514)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[2].resource.text.div (l458/c1514)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Device_device-ecmo' at 'div/table/tr/td/a' for 'See above (Device/device-ecmo)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[3].resource.text.div (l500/c2273)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[4].resource/*ServiceRequest/servicerequest-eicr-zika*/.text.div (l565/c1627)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
+     <td><b>Bundle.entry[3].resource/*Encounter/encounter-eicr-saga-anderson-001*/.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/patient-saga-anderson-001 by type and id but it's fullUrl urn:uuid:2efff959-4359-458b-8b69-f1c60f5070bc does not match the full target URL urn:uuid:patient-saga-anderson-001 by Bundle resolution rules</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[4].resource/*ServiceRequest/servicerequest-eicr-zika*/.text.div (l565/c1627)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Organization_organization-ecr-acme-laboratory' at 'div/p/a' for 'See above (Organization/organization-ecr-acme-laboratory: Acme Labs)' does not resolve</b></td>
-   </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[4].resource/*ServiceRequest/servicerequest-eicr-zika*/.code.coding[0].display (l581/c8)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Zika virus envelope E gene [Presence] in Serum by NAA with probe detection' for http://loinc.org#80825-3. Valid display is one of 0 choices: 'Zika virus envelope E gene [Presence] in Serum by NAA with probe detection' (en-US), 'Zika virus envelope E gene [Presence] in Serum by NAA with probe detection' (en-US), 'Zika E gene Ser Ql NAA+probe' (en-US), 'Zika virus E gene, Blood' (en-US), 'Gen de la envoltura (E) del virus del Zika: Suero : Punto temporal: Presencia o umbral: Ordinal: Amplificación de ácidos nucleicos con detección de sonda' (es-MX), 'Zika-Virus envelope-E-Gen [Nachweis] in Serum mittels Nukleinsäureamplifikation mit Sondendetektion' (de-DE), 'Zikavirus envelop (E) gen [aanwezigheid] in serum d.m.v. probe-detectie' (nl-NL) or 'Zika Virus (Envelope-Gen) qualitativ PCR' (de-AT) (for the language(s) 'english')</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[4].resource.text.div (l565/c1627)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[4].resource.text.div (l565/c1627)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Organization_organization-ecr-acme-laboratory' at 'div/p/a' for 'See above (Organization/organization-ecr-acme-laboratory: Acme Labs)' does not resolve</b></td>
+     <td><b>Bundle.entry[4].resource/*Condition/condition-covid19-001*/.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/patient-saga-anderson-001 by type and id but it's fullUrl urn:uuid:2efff959-4359-458b-8b69-f1c60f5070bc does not match the full target URL urn:uuid:patient-saga-anderson-001 by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[4].resource.code.coding[0].display (l581/c8)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Zika virus envelope E gene [Presence] in Serum by NAA with probe detection' for http://loinc.org#80825-3. Valid display is one of 0 choices: 'Zika virus envelope E gene [Presence] in Serum by NAA with probe detection' (en-US), 'Zika virus envelope E gene [Presence] in Serum by NAA with probe detection' (en-US), 'Zika E gene Ser Ql NAA+probe' (en-US), 'Zika virus E gene, Blood' (en-US), 'Gen de la envoltura (E) del virus del Zika: Suero : Punto temporal: Presencia o umbral: Ordinal: Amplificación de ácidos nucleicos con detección de sonda' (es-MX), 'Zika-Virus envelope-E-Gen [Nachweis] in Serum mittels Nukleinsäureamplifikation mit Sondendetektion' (de-DE), 'Zikavirus envelop (E) gen [aanwezigheid] in serum d.m.v. probe-detectie' (nl-NL) or 'Zika Virus (Envelope-Gen) qualitativ PCR' (de-AT) (for the language(s) 'english')</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[5].resource/*Condition/condition-eicr-eve-everywoman-common-cold*/.text.div (l612/c1513)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[5].resource/*Condition/condition-eicr-eve-everywoman-common-cold*/.text.div (l612/c1513)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Practitioner_practitioner-us-core-henry-seven' at 'div/p/a' for 'See above (Practitioner/practitioner-us-core-henry-seven: Henry Seven, MD)' does not resolve</b></td>
+     <td><b>Bundle.entry[4].resource/*Condition/condition-covid19-001*/.encounter</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[5].resource/*Condition/condition-eicr-eve-everywoman-common-cold*/ (l601/c6)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (Best Practice Recommendation)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[6].resource/*Encounter/encounter-eicr-eve-everywoman-outpatient*/.text.div (l652/c3439)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[6].resource/*Encounter/encounter-eicr-eve-everywoman-outpatient*/.text.div (l652/c3439)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#PractitionerRole_practitionerrole-henry-seven' at 'div/table/tr/td/a' for 'See above (PractitionerRole/practitionerrole-henry-seven: Henry Seven, MD)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[6].resource/*Encounter/encounter-eicr-eve-everywoman-outpatient*/.text.div (l652/c3439)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Condition_condition-eicr-eve-everywoman-zika' at 'div/blockquote/p/a' for 'See above (Condition/condition-eicr-eve-everywoman-zika)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[6].resource/*Encounter/encounter-eicr-eve-everywoman-outpatient*/.text.div (l652/c3439)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Condition_condition-eicr-eve-everywoman-common-cold' at 'div/blockquote/p/a' for 'See above (Condition/condition-eicr-eve-everywoman-common-cold)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[6].resource/*Encounter/encounter-eicr-eve-everywoman-outpatient*/.text.div (l652/c3439)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Location_location-ecr-salem-medical-center' at 'div/table/tr/td/a' for 'See above (Location/location-ecr-salem-medical-center: Clinic Bldg A, Salem Medical Center, 4646 Brown Rd, Salem, MA 02368)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[6].resource/*Encounter/encounter-eicr-eve-everywoman-outpatient*/.text.div (l652/c3439)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Organization_organization-ecr-salem-medical-center' at 'div/p/a' for 'See above (Organization/organization-ecr-salem-medical-center: Salem Medical Center, 22222 Health Authority Drive, Ann Arbor MI, 99999)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[6].resource/*Encounter/encounter-eicr-eve-everywoman-outpatient*/.participant[0].individual (l683/c10)</b></td><td><b>error</b></td><td title="Reference_REF_CantMatchChoice"><b>Unable to find a match for profile PractitionerRole/practitionerrole-henry-seven among choices: http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-practitionerrole</b></td>
+     <td><b>Bundle.entry[5].resource/*Observation/observation-covid19-pcr-001*/.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/patient-saga-anderson-001 by type and id but it's fullUrl urn:uuid:2efff959-4359-458b-8b69-f1c60f5070bc does not match the full target URL urn:uuid:patient-saga-anderson-001 by Bundle resolution rules</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[6].resource/*Encounter/encounter-eicr-eve-everywoman-outpatient*/.participant[0].individual (l683/c10)</b></td><td><b>error</b></td><td title="Reference_REF_CantMatchChoice"><b>Unable to find a match for profile PractitionerRole/practitionerrole-henry-seven among choices: http://hl7.org/fhir/StructureDefinition/RelatedPerson, http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner, http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[6].resource/*Encounter/encounter-eicr-eve-everywoman-outpatient*/.diagnosis[0].condition (l712/c10)</b></td><td><b>error</b></td><td title="Reference_REF_CantMatchChoice"><b>Unable to find a match for profile Condition/condition-eicr-eve-everywoman-zika among choices: http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-condition</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[6].resource/*Encounter/encounter-eicr-eve-everywoman-outpatient*/.diagnosis[1].condition (l717/c10)</b></td><td><b>error</b></td><td title="Reference_REF_CantMatchChoice"><b>Unable to find a match for profile Condition/condition-eicr-eve-everywoman-common-cold among choices: http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-condition</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[6].resource/*Encounter/encounter-eicr-eve-everywoman-outpatient*/.location[0].location (l722/c10)</b></td><td><b>error</b></td><td title="Reference_REF_CantMatchChoice"><b>Unable to find a match for profile Location/location-ecr-salem-medical-center among choices: http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-location</b></td>
-   </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[7].resource/*Observation/observation-pregnancy-status-eve-everywoman*/ (l735/c6)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[7].resource/*Observation/observation-pregnancy-status-eve-everywoman*/.text.div (l746/c2465)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
+     <td><b>Bundle.entry[5].resource/*Observation/observation-covid19-pcr-001*/.encounter</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[7].resource/*Observation/observation-pregnancy-status-eve-everywoman*/.code.coding[0].display (l757/c8)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Pregnancy status' for http://loinc.org#82810-3. Valid display is one of 0 choices: 'Pregnancy status' (en-US), 'Pregnancy status' (en-US), 'Pregnancy status' (en-US), 'Estado de embarazo: Paciente:Punto temporal:Tipo:Nominal:' (es-MX), 'Schwangerschaftsstatus' (de-DE) or 'Zwangerschapsstatus [bevinding]' (nl-NL) (for the language(s) 'english')</b></td>
+     <td><b>Bundle.entry[5].resource/*Observation/observation-covid19-pcr-001*/.performer[0]</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 2 matches the reference Organization/organization-nelson-family-practice-001 by type and id but it's fullUrl urn:uuid:e591b5a8-06f5-4ca6-a074-527f9a17ab0f does not match the full target URL urn:uuid:organization-nelson-family-practice-001 by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[7].resource/*Observation/observation-pregnancy-status-eve-everywoman*/.component[0].code.coding[0].display (l790/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Gestational age Estimated from patient reported estimated date of conception' for http://loinc.org#53691-2. Valid display is one of 0 choices: 'Gestational age Estimated from patient reported estimated date of conception' (en-US), 'Gestational age Estimated from patient reported estimated date of conception' (en-US), 'GA Estimated from patient reported EDC' (en-US), 'Edad gestacional: Feto:Punto temporal:Tiempo:Cuantitativo:Estimated from patient reported EDC' (es-MX) or 'GA Estimated from patient reported EDC' (pt-BR) (for the language(s) 'english')</b></td>
+     <td><b>Bundle.entry[5].resource/*Observation/observation-covid19-pcr-001*/.meta.profile[0] (l440/c8)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_ERROR"><b>Profile reference 'http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-observation' has not been checked because it could not be found, and fetching it resulted in the error org.hl7.fhir.r4.utils.client.EFhirClientException: Error reading Http Response from http://hl7.org/fhir/us/ecr: Error parsing JSON source: Unexpected char 'T' in json stream at Line 1 (path=[null])</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[7].resource/*Observation/observation-pregnancy-status-eve-everywoman*/.component[1].code.coding[0].display (l807/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Delivery date Estimated from date fundal height reaches umb' for http://loinc.org#57064-8. Valid display is one of 0 choices: 'Delivery date Estimated from date fundal height reaches umb' (en-US), 'Delivery date Estimated from date fundal height reaches umb' (en-US), 'Deliv date Est from date FH reaches umb' (en-US), 'Fecha de entrega: Paciente:Punto temporal:Fecha:Cuantitativo:Estimated from date fundal height reaches umb' (es-MX) or 'DeFígadoy date Est from date fundal heigh' (pt-BR) (for the language(s) 'english')</b></td>
+     <td><b>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/patient-saga-anderson-001 by type and id but it's fullUrl urn:uuid:2efff959-4359-458b-8b69-f1c60f5070bc does not match the full target URL urn:uuid:patient-saga-anderson-001 by Bundle resolution rules</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[7].resource.text.div (l746/c2465)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
-   </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[7].resource.code.coding[0].display (l757/c8)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Pregnancy status' for http://loinc.org#82810-3. Valid display is one of 0 choices: 'Pregnancy status' (en-US), 'Pregnancy status' (en-US), 'Pregnancy status' (en-US), 'Estado de embarazo: Paciente:Punto temporal:Tipo:Nominal:' (es-MX), 'Schwangerschaftsstatus' (de-DE) or 'Zwangerschapsstatus [bevinding]' (nl-NL) (for the language(s) 'english')</b></td>
+     <td><b>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.encounter</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[7].resource.component[0].code.coding[0].display (l790/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Gestational age Estimated from patient reported estimated date of conception' for http://loinc.org#53691-2. Valid display is one of 0 choices: 'Gestational age Estimated from patient reported estimated date of conception' (en-US), 'Gestational age Estimated from patient reported estimated date of conception' (en-US), 'GA Estimated from patient reported EDC' (en-US), 'Edad gestacional: Feto:Punto temporal:Tiempo:Cuantitativo:Estimated from patient reported EDC' (es-MX) or 'GA Estimated from patient reported EDC' (pt-BR) (for the language(s) 'english')</b></td>
+     <td><b>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.author[0]</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 1 matches the reference Practitioner/practitioner-emma-nelson-001 by type and id but it's fullUrl urn:uuid:d4a6b124-0aea-4b5d-9453-ba70f7770d26 does not match the full target URL urn:uuid:practitioner-emma-nelson-001 by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[7].resource.component[1].code.coding[0].display (l807/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Delivery date Estimated from date fundal height reaches umb' for http://loinc.org#57064-8. Valid display is one of 0 choices: 'Delivery date Estimated from date fundal height reaches umb' (en-US), 'Delivery date Estimated from date fundal height reaches umb' (en-US), 'Deliv date Est from date FH reaches umb' (en-US), 'Fecha de entrega: Paciente:Punto temporal:Fecha:Cuantitativo:Estimated from date fundal height reaches umb' (es-MX) or 'DeFígadoy date Est from date fundal heigh' (pt-BR) (for the language(s) 'english')</b></td>
+     <td><b>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.custodian</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 2 matches the reference Organization/organization-nelson-family-practice-001 by type and id but it's fullUrl urn:uuid:e591b5a8-06f5-4ca6-a074-527f9a17ab0f does not match the full target URL urn:uuid:organization-nelson-family-practice-001 by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[8].resource/*Observation/observation-vaccine-credential-assertion-eve-everywoman*/ (l820/c6)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+     <td><b>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.section[0].entry[0]</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[8].resource/*Observation/observation-vaccine-credential-assertion-eve-everywoman*/.text.div (l831/c1414)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
-   </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[8].resource/*Observation/observation-vaccine-credential-assertion-eve-everywoman*/.code.coding[0].display (l834/c8)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Immunization status - Reported' for http://loinc.org#11370-4. Valid display is one of 0 choices: 'Immunization status - Reported' (en-US), 'Immunization status - Reported' (en-US), 'Immunization status Reported' (en-US), 'Estado de vacunación: Paciente:Punto temporal:Tipo:Nominal:Reported' (es-MX), 'estado de inmunización:hallazgo:punto en el tiempo:^paciente:Nominal:informado' (es-AR) or 'Status inentingen [bevinding] d.m.v. rapportage' (nl-NL) (for the language(s) 'english')</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[8].resource.text.div (l831/c1414)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
+     <td><b>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.section[1].entry[0]</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[8].resource.code.coding[0].display (l834/c8)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Immunization status - Reported' for http://loinc.org#11370-4. Valid display is one of 0 choices: 'Immunization status - Reported' (en-US), 'Immunization status - Reported' (en-US), 'Immunization status Reported' (en-US), 'Estado de vacunación: Paciente:Punto temporal:Tipo:Nominal:Reported' (es-MX), 'estado de inmunización:hallazgo:punto en el tiempo:^paciente:Nominal:informado' (es-AR) or 'Status inentingen [bevinding] d.m.v. rapportage' (nl-NL) (for the language(s) 'english')</b></td>
+     <td><b>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.section[2].entry[0]</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[9].resource/*Observation/observation-us-ph-emergency-outbreak-info-eve-everywoman*/ (l857/c6)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[9].resource/*Observation/observation-us-ph-emergency-outbreak-info-eve-everywoman*/.text.div (l868/c1182)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[9].resource.text.div (l868/c1182)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
+     <td><b>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.section[3].entry[0]</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[10].resource/*Observation/observation-country-of-nationality-eve-everywoman*/ (l887/c6)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+     <td><b>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.section[5].entry[0]</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[10].resource/*Observation/observation-country-of-nationality-eve-everywoman*/.text.div (l898/c1516)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
+     <td><b>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/ (l504/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.extension:sliceExtensionVersionNumber': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[10].resource.text.div (l898/c1516)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
+     <td><b>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/ (l504/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.section:sliceReasonForVisitSection': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[12].resource/*Immunization/immunization-ecr-pneumo*/.text.div (l1061/c1224)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
+     <td><b>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/ (l504/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.section:sliceHistoryOfPresentIllnessSection': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[12].resource.text.div (l1061/c1224)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
+     <td><b>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/ (l504/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.section:sliceResultsSection': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
    </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[13].resource/*Observation/observation-country-of-residence-eve-everywoman*/ (l1081/c6)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
-   </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[13].resource/*Observation/observation-country-of-residence-eve-everywoman*/.text.div (l1092/c1501)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
+     <td><b>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.section[5] (l631/c12)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.section:sliceProblemSection.entry:sliceEICRCondition': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[13].resource/*Observation/observation-country-of-residence-eve-everywoman*/.code.coding[0].display (l1095/c8)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Country of usual residence' for http://loinc.org#77983-5. Valid display is one of 0 choices: 'Country of usual residence [Location]' (en-US), 'Country of usual residence [Location]' (en-US), 'Country of usual residence' (en-US) or 'País de residencia habitual: Paciente:Punto temporal:Loc:Nominal:' (es-MX) (for the language(s) 'english')</b></td>
+     <td><b>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.extension[1].value.ofType(Reference)</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 1 matches the reference Practitioner/practitioner-emma-nelson-001 by type and id but it's fullUrl urn:uuid:d4a6b124-0aea-4b5d-9453-ba70f7770d26 does not match the full target URL urn:uuid:practitioner-emma-nelson-001 by Bundle resolution rules</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[13].resource.text.div (l1092/c1501)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
-   </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[13].resource.code.coding[0].display (l1095/c8)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Country of usual residence' for http://loinc.org#77983-5. Valid display is one of 0 choices: 'Country of usual residence [Location]' (en-US), 'Country of usual residence [Location]' (en-US), 'Country of usual residence' (en-US) or 'País de residencia habitual: Paciente:Punto temporal:Loc:Nominal:' (es-MX) (for the language(s) 'english')</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[14].resource/*PractitionerRole/practitionerrole-henry-seven*/.text.div (l1129/c1808)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Practitioner_practitioner-us-core-henry-seven' at 'div/p/a' for 'See above (Practitioner/practitioner-us-core-henry-seven: Henry Seven, MD)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[14].resource/*PractitionerRole/practitionerrole-henry-seven*/.text.div (l1129/c1808)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Organization_organization-ecr-salem-medical-center' at 'div/p/a' for 'See above (Organization/organization-ecr-salem-medical-center: Salem Medical Center)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[14].resource/*PractitionerRole/practitionerrole-henry-seven*/.text.div (l1129/c1808)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Location_location-ecr-salem-medical-center' at 'div/p/a' for 'See above (Location/location-ecr-salem-medical-center: Salem Medical Center)' does not resolve</b></td>
+     <td><b>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/patient-saga-anderson-001 by type and id but it's fullUrl urn:uuid:2efff959-4359-458b-8b69-f1c60f5070bc does not match the full target URL urn:uuid:patient-saga-anderson-001 by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[14].resource/*PractitionerRole/practitionerrole-henry-seven*/.specialty[0] (l1150/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'Healthcare Provider Taxonomy' (http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066|C-CDA R2.1 2020-07-13), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#419772000)</b></td>
+     <td><b>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.encounter</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[14].resource/*PractitionerRole/practitionerrole-henry-seven*/.location[0] (l1157/c8)</b></td><td><b>error</b></td><td title="Reference_REF_CantMatchChoice"><b>Unable to find a match for profile Location/location-ecr-salem-medical-center among choices: http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-location</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[15].resource.text.div (l1180/c2247)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
-   </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[15].resource.code.coding[0].display (l1191/c8)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Blood pressure panel with all children optional' for http://loinc.org#85354-9. Valid display is one of 0 choices: 'Blood pressure panel with all children optional' (en-US), 'Blood pressure panel with all children optional' (en-US), 'BP pnl w all optional' (en-US), 'Panel de presión arterial con todos los niños opcional:Sistema arterial :Punto temporal:-:Cuantitativo:' (es-MX), 'Bluckdruck (Liste) optional mit allen Unterbegriffen' (de-DE) or 'Bloeddruk panel waarvan alle leden optioneel in arterieel vaatstelsel' (nl-NL) (for the language(s) 'english')</b></td>
+     <td><b>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.author[0]</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 2 matches the reference Organization/organization-nelson-family-practice-001 by type and id but it's fullUrl urn:uuid:e591b5a8-06f5-4ca6-a074-527f9a17ab0f does not match the full target URL urn:uuid:organization-nelson-family-practice-001 by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[15].resource.component[0].code.coding[0].display (l1208/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Systolic blood pressure' for http://loinc.org#8480-6. Valid display is one of 0 choices: 'Systolic blood pressure' (en-US), 'Systolic blood pressure' (en-US), 'BP sys' (en-US), 'Sistólica intravascular:Sistema arterial :Punto temporal:Pres:Cuantitativo:' (es-MX), 'sistólico intravascular:presión:punto en el tiempo:sistema arterial:cuantitativo:' (es-AR), 'BP sys' (pt-BR), 'Systolischer Blutdruck' (de-DE), 'Intravasculaire systolische bloeddruk [druk] in arterieel vaatstelsel' (nl-NL) or 'Blutdruck systolisch' (de-AT) (for the language(s) 'english')</b></td>
+     <td><b>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.custodian</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 2 matches the reference Organization/organization-nelson-family-practice-001 by type and id but it's fullUrl urn:uuid:e591b5a8-06f5-4ca6-a074-527f9a17ab0f does not match the full target URL urn:uuid:organization-nelson-family-practice-001 by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[15].resource.component[1].code.coding[0].display (l1224/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Diastolic blood pressure' for http://loinc.org#8462-4. Valid display is one of 0 choices: 'Diastolic blood pressure' (en-US), 'Diastolic blood pressure' (en-US), 'BP dias' (en-US), 'Diastólica intravascular:Sistema arterial :Punto temporal:Pres:Cuantitativo:' (es-MX), 'diastólico intravascular:presión:punto en el tiempo:sistema arterial:cuantitativo:' (es-AR), 'BP dias' (pt-BR), 'Diastolischer Blutdruck' (de-DE), 'Intravasculaire diastolische bloeddruk [druk] in arterieel vaatstelsel' (nl-NL) or 'Blutdruck diastolisch' (de-AT) (for the language(s) 'english')</b></td>
+     <td><b>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[0].entry[0]</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 8 matches the reference Observation/observation-rr-covid19-001 by type and id but it's fullUrl urn:uuid:a228ecdc-1fd9-46b2-a01c-37f9dd5b73ac does not match the full target URL urn:uuid:observation-rr-covid19-001 by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[15].resource/*Observation/observation-blood-pressure-eve-everywoman*/ (l1169/c6)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[15].resource/*Observation/observation-blood-pressure-eve-everywoman*/.text.div (l1180/c2247)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
+     <td><b>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[1].extension[0].extension[0].value.ofType(Reference)</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 10 matches the reference Observation/observation-eicr-status-001 by type and id but it's fullUrl urn:uuid:bdeb53b2-b19a-4d3d-a110-35115fd8a486 does not match the full target URL urn:uuid:observation-eicr-status-001 by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[15].resource/*Observation/observation-blood-pressure-eve-everywoman*/.code.coding[0].display (l1191/c8)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Blood pressure panel with all children optional' for http://loinc.org#85354-9. Valid display is one of 0 choices: 'Blood pressure panel with all children optional' (en-US), 'Blood pressure panel with all children optional' (en-US), 'BP pnl w all optional' (en-US), 'Panel de presión arterial con todos los niños opcional:Sistema arterial :Punto temporal:-:Cuantitativo:' (es-MX), 'Bluckdruck (Liste) optional mit allen Unterbegriffen' (de-DE) or 'Bloeddruk panel waarvan alle leden optioneel in arterieel vaatstelsel' (nl-NL) (for the language(s) 'english')</b></td>
+     <td><b>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[1].extension[1].value.ofType(CodeableConcept).coding[0].system (l791/c18)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[15].resource/*Observation/observation-blood-pressure-eve-everywoman*/.component[0].code.coding[0].display (l1208/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Systolic blood pressure' for http://loinc.org#8480-6. Valid display is one of 0 choices: 'Systolic blood pressure' (en-US), 'Systolic blood pressure' (en-US), 'BP sys' (en-US), 'Sistólica intravascular:Sistema arterial :Punto temporal:Pres:Cuantitativo:' (es-MX), 'sistólico intravascular:presión:punto en el tiempo:sistema arterial:cuantitativo:' (es-AR), 'BP sys' (pt-BR), 'Systolischer Blutdruck' (de-DE), 'Intravasculaire systolische bloeddruk [druk] in arterieel vaatstelsel' (nl-NL) or 'Blutdruck systolisch' (de-AT) (for the language(s) 'english')</b></td>
+     <td><b>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[1].extension[1].value.ofType(CodeableConcept) (l791/c18)</b></td><td><b>warning</b></td><td title="null"><b>Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.5|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[15].resource/*Observation/observation-blood-pressure-eve-everywoman*/.component[1].code.coding[0].display (l1224/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Diastolic blood pressure' for http://loinc.org#8462-4. Valid display is one of 0 choices: 'Diastolic blood pressure' (en-US), 'Diastolic blood pressure' (en-US), 'BP dias' (en-US), 'Diastólica intravascular:Sistema arterial :Punto temporal:Pres:Cuantitativo:' (es-MX), 'diastólico intravascular:presión:punto en el tiempo:sistema arterial:cuantitativo:' (es-AR), 'BP dias' (pt-BR), 'Diastolischer Blutdruck' (de-DE), 'Intravasculaire diastolische bloeddruk [druk] in arterieel vaatstelsel' (nl-NL) or 'Blutdruck diastolisch' (de-AT) (for the language(s) 'english')</b></td>
+     <td><b>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[1].extension[1].value.ofType(CodeableConcept) (l791/c18)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.5|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[16].resource/*Observation/observation-us-ph-exposure-contact-info-football-game*/ (l1243/c6)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[16].resource/*Observation/observation-us-ph-exposure-contact-info-football-game*/.text.div (l1254/c2131)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[16].resource/*Observation/observation-us-ph-exposure-contact-info-football-game*/.text.div (l1254/c2131)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Location_location-ecr-city-football-stadium' at 'div/p/a' for 'See above (Location/location-ecr-city-football-stadium: City Football Stadium)' does not resolve</b></td>
+     <td><b>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[1].extension[1].value.ofType(CodeableConcept).coding[0] (l791/c18)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated</b></td>
    </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[16].resource/*Observation/observation-us-ph-exposure-contact-info-football-game*/.code.coding[0].system (l1265/c8)</b></td><td><b>information</b></td><td title="null"><b>A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/umls' could not be found, so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[16].resource.text.div (l1254/c2131)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[16].resource.text.div (l1254/c2131)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Location_location-ecr-city-football-stadium' at 'div/p/a' for 'See above (Location/location-ecr-city-football-stadium: City Football Stadium)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[16].resource.code.coding[0].system (l1265/c8)</b></td><td><b>information</b></td><td title="null"><b>A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/umls' could not be found, so the code cannot be validated</b></td>
-   </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[17].resource/*Observation/observation-travel-history-eve-everywoman-201801*/ (l1297/c6)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[17].resource/*Observation/observation-travel-history-eve-everywoman-201801*/.text.div (l1308/c2669)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
+     <td><b>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[1].entry[0]</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 8 matches the reference Observation/observation-rr-covid19-001 by type and id but it's fullUrl urn:uuid:a228ecdc-1fd9-46b2-a01c-37f9dd5b73ac does not match the full target URL urn:uuid:observation-rr-covid19-001 by Bundle resolution rules</b></td>
    </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[17].resource/*Observation/observation-travel-history-eve-everywoman-201801*/.component[1].value.ofType(CodeableConcept).coding[0].system (l1351/c10)</b></td><td><b>information</b></td><td title="null"><b>A definition for CodeSystem 'urn:oid:1.0.3166.1' could not be found, so the code cannot be validated</b></td>
-   </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[17].resource.text.div (l1308/c2669)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[17].resource.component[1].value.ofType(CodeableConcept).coding[0].system (l1351/c10)</b></td><td><b>information</b></td><td title="null"><b>A definition for CodeSystem 'urn:oid:1.0.3166.1' could not be found, so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/ (l697/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.section:sliceEICRSection': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
    </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[17].resource.component[1].value.ofType(CodeableConcept).coding[0] (l1352/c12)</b></td><td><b>warning</b></td><td title="Terminology_TX_Confirm_5"><b>The code provided (urn:oid:1.0.3166.1#VUT) is not in the value set 'Geographical location history' (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3201|1), and a code should come from this value set unless it has no suitable code (the validator cannot judge what is suitable)</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[18].resource/*Observation/observation-disability-status-eve-everywoman*/ (l1379/c6)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
-   </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[18].resource/*Observation/observation-disability-status-eve-everywoman*/.text.div (l1390/c1198)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[18].resource/*Observation/observation-disability-status-eve-everywoman*/.code.coding[0].display (l1393/c8)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Are you deaf, or do you have serious difficulty hearing?' for http://loinc.org#69856-3. Valid display is one of 0 choices: 'Are you deaf, or do you have serious difficulty hearing' (en-US) or 'Are you deaf, or do you have serious difficulty hearing' (en-US) (for the language(s) 'english')</b></td>
+     <td><b>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[1] (l775/c12)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.section:sliceRRSummarySection.entry:sliceRRSummary': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[18].resource.text.div (l1390/c1198)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[18].resource.code.coding[0].display (l1393/c8)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Are you deaf, or do you have serious difficulty hearing?' for http://loinc.org#69856-3. Valid display is one of 0 choices: 'Are you deaf, or do you have serious difficulty hearing' (en-US) or 'Are you deaf, or do you have serious difficulty hearing' (en-US) (for the language(s) 'english')</b></td>
+     <td><b>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[1] (l775/c12)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.section:sliceRRSummarySection.entry:sliceRRCondition': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[19].resource/*Observation/observation-us-ph-lab-result-eve-everywoman-lymphocytes*/ (l1410/c6)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[19].resource/*Observation/observation-us-ph-lab-result-eve-everywoman-lymphocytes*/.text.div (l1418/c2105)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
+     <td><b>Bundle.entry[8].resource/*Observation/observation-rr-covid19-001*/.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/patient-saga-anderson-001 by type and id but it's fullUrl urn:uuid:2efff959-4359-458b-8b69-f1c60f5070bc does not match the full target URL urn:uuid:patient-saga-anderson-001 by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[19].resource/*Observation/observation-us-ph-lab-result-eve-everywoman-lymphocytes*/.code.coding[0].display (l1429/c8)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Lymphocytes [#/volume] in Blood by Automated count' for http://loinc.org#731-0. Valid display is one of 0 choices: 'Lymphocytes [#/volume] in Blood by Automated count' (en-US), 'Lymphocytes [#/volume] in Blood by Automated count' (en-US), 'Lymphocytes # Bld Auto' (en-US), 'Lymphocytes, Blood' (en-US), 'Linfocitos: Sangre : Punto temporal: Concentración numérica: Cuantitativo: Recuento automatizado' (es-MX), 'linfocitos:concentración de número:punto en el tiempo:sangre:cuantitativo:recuento automático' (es-AR), 'Lymphocytes # Sg Auto' (pt-BR), 'Lymphozyten [#/Volumen] in Blut mittels automatisierter Zählung' (de-DE), 'Lymfocyten [aantal/volume] in bloed d.m.v. geautomatiseerde telling' (nl-NL), 'Лімфоцити [кількість/об'єм] в Крові Автоматизований підрахунок' (uk-UA), 'Лімфоцити # Крв Авто' (uk-UA) or 'Лімфоцити Авто (Крв) [#/об'єм]' (uk-UA) (for the language(s) 'english')</b></td>
+     <td><b>Bundle.entry[8].resource/*Observation/observation-rr-covid19-001*/.encounter</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[19].resource.text.div (l1418/c2105)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
-   </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[19].resource.code.coding[0].display (l1429/c8)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Lymphocytes [#/volume] in Blood by Automated count' for http://loinc.org#731-0. Valid display is one of 0 choices: 'Lymphocytes [#/volume] in Blood by Automated count' (en-US), 'Lymphocytes [#/volume] in Blood by Automated count' (en-US), 'Lymphocytes # Bld Auto' (en-US), 'Lymphocytes, Blood' (en-US), 'Linfocitos: Sangre : Punto temporal: Concentración numérica: Cuantitativo: Recuento automatizado' (es-MX), 'linfocitos:concentración de número:punto en el tiempo:sangre:cuantitativo:recuento automático' (es-AR), 'Lymphocytes # Sg Auto' (pt-BR), 'Lymphozyten [#/Volumen] in Blut mittels automatisierter Zählung' (de-DE), 'Lymfocyten [aantal/volume] in bloed d.m.v. geautomatiseerde telling' (nl-NL), 'Лімфоцити [кількість/об'єм] в Крові Автоматизований підрахунок' (uk-UA), 'Лімфоцити # Крв Авто' (uk-UA) or 'Лімфоцити Авто (Крв) [#/об'єм]' (uk-UA) (for the language(s) 'english')</b></td>
+     <td><b>Bundle.entry[8].resource/*Observation/observation-rr-covid19-001*/.performer[0]</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 2 matches the reference Organization/organization-nelson-family-practice-001 by type and id but it's fullUrl urn:uuid:e591b5a8-06f5-4ca6-a074-527f9a17ab0f does not match the full target URL urn:uuid:organization-nelson-family-practice-001 by Bundle resolution rules</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[21].resource/*Location/location-ecr-salem-medical-center*/.text.div (l1524/c1400)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Organization_organization-ecr-salem-medical-center' at 'div/p/a' for 'See above (Organization/organization-ecr-salem-medical-center)' does not resolve</b></td>
-   </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[22].resource/*Location/location-ecr-city-football-stadium*/.type[0] (l1580/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'ServiceDeliveryLocationRoleType' (http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType|3.0.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#264379009)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[24].resource/*Condition/condition-eicr-eve-everywoman-zika*/.text.div (l1645/c1381)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Patient_patient-ecr-eve-everywoman' at 'div/p/a' for 'See above (Patient/patient-ecr-eve-everywoman: Eve Everywoman)' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[24].resource/*Condition/condition-eicr-eve-everywoman-zika*/.text.div (l1645/c1381)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_XHTML_Resolve"><b>Hyperlink '#Practitioner_practitioner-us-core-henry-seven' at 'div/p/a' for 'See above (Practitioner/practitioner-us-core-henry-seven: Henry Seven, MD)' does not resolve</b></td>
+     <td><b>Bundle.entry[8].resource (l831/c8)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[24].resource/*Condition/condition-eicr-eve-everywoman-zika*/ (l1635/c6)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (Best Practice Recommendation)</b></td>
+     <td><b>Bundle.entry[8].resource/*Observation/observation-rr-covid19-001*/.meta.profile[0] (l831/c8)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_ERROR"><b>Profile reference 'http://hl7.org/fhir/us/ecr/StructureDefinition/rr-observation' has not been checked because it could not be found, and fetching it resulted in the error org.hl7.fhir.r4.utils.client.EFhirClientException: Error reading Http Response from http://hl7.org/fhir/us/ecr: Error parsing JSON source: Unexpected char 'T' in json stream at Line 1 (path=[null])</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[7].resource (l735/c6)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+     <td><b>Bundle.entry[9].resource/*Observation/observation-condition-status-001*/.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/patient-saga-anderson-001 by type and id but it's fullUrl urn:uuid:2efff959-4359-458b-8b69-f1c60f5070bc does not match the full target URL urn:uuid:patient-saga-anderson-001 by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[8].resource (l820/c6)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+     <td><b>Bundle.entry[9].resource/*Observation/observation-condition-status-001*/.performer[0]</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 2 matches the reference Organization/organization-nelson-family-practice-001 by type and id but it's fullUrl urn:uuid:e591b5a8-06f5-4ca6-a074-527f9a17ab0f does not match the full target URL urn:uuid:organization-nelson-family-practice-001 by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[9].resource (l857/c6)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+     <td><b>Bundle.entry[10].resource/*Observation/observation-eicr-status-001*/ (l932/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_subject"><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[10].resource (l887/c6)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+     <td><b>Bundle.entry[10].resource/*Observation/observation-eicr-status-001*/ (l932/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[13].resource (l1081/c6)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+     <td><b>Bundle.entry[10].resource/*Observation/observation-eicr-status-001*/ (l932/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[15].resource (l1169/c6)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+     <td><b>Bundle.entry[10].resource/*Observation/observation-eicr-status-001*/.code.coding[0] (l945/c10)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[16].resource (l1243/c6)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+     <td><b>Bundle.entry[10].resource/*Observation/observation-eicr-status-001*/.code (l945/c10)</b></td><td><b>warning</b></td><td title="null"><b>Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.8|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[17].resource (l1297/c6)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+     <td><b>Bundle.entry[10].resource (l932/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_subject"><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[18].resource (l1379/c6)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+     <td><b>Bundle.entry[10].resource (l932/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[19].resource (l1410/c6)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Bundle.entry:slicePublicHealthComposition': minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-document-bundle|2.1.1)</b></td>
+     <td><b>Bundle.entry[10].resource (l932/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
    </tr>
 </table>
