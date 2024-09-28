@@ -22,6 +22,9 @@ You will also need to download and place the `validator_cli.jar` file in the roo
 └── validator_cli.jar
 ```
 
+> [!TIP]
+> You can use the `download-validator.sh` script to download the `validator_cli.jar` file from its GitHub release page. It will also check the version of your current `validator_cli.jar` file and download the latest version if it is outdated. To run the script you can use the following command: `./download-validator.sh`.
+
 ## Running the FHIR Validator
 
 An example of how to run the command to test against the eCR FHIR IG::
