@@ -1,6 +1,6 @@
 {
   "resourceType": "Composition",
-  "id": "eicr-rr-composition-rr",
+  "id": "composition-rr-covid19-001",
   "meta": {
     "versionId": "1",
     "lastUpdated": "2024-09-26T00:00:00.000Z",
@@ -21,23 +21,19 @@
     ]
   },
   "subject": {
-    "reference": "Patient/patient-covid19-example",
-    "display": "John Doe"
+    "reference": "Patient/patient-saga-anderson-001"
   },
   "encounter": {
-    "reference": "Encounter/encounter-covid19-example",
-    "display": "Emergency Room Visit"
+    "reference": "Encounter/encounter-eicr-saga-anderson-001"
   },
   "date": "2024-09-26T12:30:00Z",
   "author": [
     {
-      "reference": "Organization/organization-health-authority",
-      "display": "Health Authority"
+      "reference": "Organization/organization-nelson-family-practice-001"
     }
   ],
   "custodian": {
-    "reference": "Organization/organization-health-authority",
-    "display": "Health Authority"
+    "reference": "Organization/organization-nelson-family-practice-001"
   },
   "title": "COVID-19 Reportability Response",
   "extension": [
@@ -48,7 +44,7 @@
     {
       "url": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-information-recipient-extension",
       "valueReference": {
-        "reference": "PractitionerRole/practitionerrole-example"
+        "reference": "Practitioner/practitioner-emma-nelson-001"
       }
     }
   ],
@@ -74,8 +70,7 @@
       },
       "entry": [
         {
-          "reference": "Observation/observation-covid19-response",
-          "display": "COVID-19 Reportable Condition"
+          "reference": "Observation/observation-rr-covid19-001"
         }
       ]
     },
@@ -87,8 +82,8 @@
             {
               "url": "eICRProcessingStatus",
               "valueReference": {
-                "reference": "Observation/observation-processing-status",
-                "display": "Processed with warnings"
+                "reference": "Observation/observation-eicr-status-001",
+                "display": "Processed"
               }
             }
           ]
@@ -122,8 +117,7 @@
       },
       "entry": [
         {
-          "reference": "Observation/observation-covid19-summary",
-          "display": "COVID-19 Summary Observation"
+          "reference": "Observation/observation-rr-covid19-001"
         }
       ]
     }

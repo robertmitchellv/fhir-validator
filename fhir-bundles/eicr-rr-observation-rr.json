@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "eicr-rr-observation-rr",
+  "id": "observation-rr-covid19-001",
   "status": "final",
   "category": [
     {
@@ -23,15 +23,15 @@
     ]
   },
   "subject": {
-    "reference": "Patient/patient-saga-anderson"
+    "reference": "Patient/patient-saga-anderson-001"
   },
   "encounter": {
-    "reference": "Encounter/encounter-eicr-saga-anderson"
+    "reference": "Encounter/encounter-eicr-saga-anderson-001"
   },
   "effectiveDateTime": "2021-08-03T12:45:00Z",
   "performer": [
     {
-      "reference": "Organization/organization-nelson-family-practice"
+      "reference": "Organization/organization-nelson-family-practice-001"
     }
   ],
   "valueCodeableConcept": {

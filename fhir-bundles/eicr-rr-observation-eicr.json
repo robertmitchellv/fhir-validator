@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "eicr-rr-observation-eicr",
+  "id": "observation-covid19-pcr-001",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-observation"
@@ -33,15 +33,15 @@
     "text": "COVID-19 PCR Test"
   },
   "subject": {
-    "reference": "Patient/patient-saga-anderson"
+    "reference": "Patient/patient-saga-anderson-001"
   },
   "encounter": {
-    "reference": "Encounter/encounter-eicr-saga-anderson"
+    "reference": "Encounter/encounter-eicr-saga-anderson-001"
   },
   "effectiveDateTime": "2021-08-03T12:45:00Z",
   "performer": [
     {
-      "reference": "Organization/organization-nelson-family-practice"
+      "reference": "Organization/organization-nelson-family-practice-001"
     }
   ],
   "valueCodeableConcept": {
