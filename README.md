@@ -11,9 +11,11 @@ You will also need to download and place the `validator_cli.jar` file in the roo
 ```
 .
 ├── fhir-bundles
-│   ├── Bundle-bundle-ecr-message-zika.json
+│   ├── dibbs-converted
+│   ├── ecr-ig
+│   ├── eicr-rr-batch-bundle.json
 │   ├── ...
-│   └── eICR_TC-Routing_VPD-bundle.json
+│   └── README.md
 ├── hapi
 │   ├── docker-compose.yaml
 │   └── README.md
