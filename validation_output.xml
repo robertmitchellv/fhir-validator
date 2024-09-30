@@ -30,7 +30,7 @@
         </tr>
         <tr>
           <td>error</td>
-          <td>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/</td>
+          <td>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/</td>
           <td>structure</td>
           <td>Slice 'Composition.extension:sliceExtensionVersionNumber': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</td>
           <td/>
@@ -38,7 +38,7 @@
         </tr>
         <tr>
           <td>error</td>
-          <td>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/</td>
+          <td>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/</td>
           <td>structure</td>
           <td>Slice 'Composition.section:sliceHistoryOfPresentIllnessSection': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</td>
           <td/>
@@ -46,7 +46,7 @@
         </tr>
         <tr>
           <td>error</td>
-          <td>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/</td>
+          <td>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/</td>
           <td>structure</td>
           <td>Slice 'Composition.section:sliceReasonForVisitSection': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</td>
           <td/>
@@ -54,7 +54,7 @@
         </tr>
         <tr>
           <td>error</td>
-          <td>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/</td>
+          <td>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/</td>
           <td>structure</td>
           <td>Slice 'Composition.section:sliceResultsSection': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</td>
           <td/>
@@ -62,7 +62,7 @@
         </tr>
         <tr>
           <td>error</td>
-          <td>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.section[5]</td>
+          <td>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.section[5]</td>
           <td>structure</td>
           <td>Slice 'Composition.section:sliceProblemSection.entry:sliceEICRCondition': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</td>
           <td/>
@@ -70,7 +70,7 @@
         </tr>
         <tr>
           <td>error</td>
-          <td>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/</td>
+          <td>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/</td>
           <td>structure</td>
           <td>Slice 'Composition.section:sliceEICRSection': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</td>
           <td/>
@@ -78,7 +78,7 @@
         </tr>
         <tr>
           <td>error</td>
-          <td>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[1]</td>
+          <td>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.section[1]</td>
           <td>structure</td>
           <td>Slice 'Composition.section:sliceRRSummarySection.entry:sliceRRCondition': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</td>
           <td/>
@@ -86,7 +86,7 @@
         </tr>
         <tr>
           <td>error</td>
-          <td>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[1]</td>
+          <td>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.section[1]</td>
           <td>structure</td>
           <td>Slice 'Composition.section:sliceRRSummarySection.entry:sliceRRSummary': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</td>
           <td/>
@@ -110,23 +110,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[1].extension[1].value.ofType(CodeableConcept)</td>
-          <td>code-invalid</td>
-          <td>A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.5|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found</td>
-          <td/>
-          <td>TerminologyEngine</td>
-        </tr>
-        <tr>
-          <td>warning</td>
-          <td>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[1].extension[1].value.ofType(CodeableConcept)</td>
-          <td>code-invalid</td>
-          <td>Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.5|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found</td>
-          <td/>
-          <td>TerminologyEngine</td>
-        </tr>
-        <tr>
-          <td>warning</td>
-          <td>Bundle.entry[10].resource/*Observation/observation-eicr-status-001*/.code</td>
+          <td>Bundle.entry[8].resource/*Observation/observation-eicr-status-001*/.code</td>
           <td>code-invalid</td>
           <td>Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.8|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found</td>
           <td/>
@@ -134,7 +118,15 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[10].resource/*Observation/observation-eicr-status-001*/</td>
+          <td>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.section[1].extension[1].value.ofType(CodeableConcept)</td>
+          <td>code-invalid</td>
+          <td>Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.5|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found</td>
+          <td/>
+          <td>TerminologyEngine</td>
+        </tr>
+        <tr>
+          <td>warning</td>
+          <td>Bundle.entry[8].resource/*Observation/observation-eicr-status-001*/</td>
           <td>invalid</td>
           <td>Best Practice Recommendation: In general, all observations should have a performer</td>
           <td/>
@@ -142,7 +134,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[10].resource</td>
+          <td>Bundle.entry[8].resource</td>
           <td>invalid</td>
           <td>Best Practice Recommendation: In general, all observations should have a performer</td>
           <td/>
@@ -150,7 +142,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[10].resource/*Observation/observation-eicr-status-001*/</td>
+          <td>Bundle.entry[8].resource/*Observation/observation-eicr-status-001*/</td>
           <td>invalid</td>
           <td>Best Practice Recommendation: In general, all observations should have a subject</td>
           <td/>
@@ -158,7 +150,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[10].resource</td>
+          <td>Bundle.entry[8].resource</td>
           <td>invalid</td>
           <td>Best Practice Recommendation: In general, all observations should have a subject</td>
           <td/>
@@ -166,7 +158,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[10].resource/*Observation/observation-eicr-status-001*/</td>
+          <td>Bundle.entry[8].resource/*Observation/observation-eicr-status-001*/</td>
           <td>invalid</td>
           <td>Best Practice Recommendation: In general, all observations should have an effective[x] ()</td>
           <td/>
@@ -174,7 +166,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[10].resource</td>
+          <td>Bundle.entry[8].resource</td>
           <td>invalid</td>
           <td>Best Practice Recommendation: In general, all observations should have an effective[x] ()</td>
           <td/>
@@ -182,7 +174,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[1].extension[1].value.ofType(CodeableConcept).coding[0].system</td>
+          <td>Bundle.entry[8].resource/*Observation/observation-eicr-status-001*/.code.coding[0].system</td>
           <td>not-found</td>
           <td>A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated</td>
           <td/>
@@ -190,7 +182,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[1].extension[1].value.ofType(CodeableConcept).coding[0]</td>
+          <td>Bundle.entry[8].resource/*Observation/observation-eicr-status-001*/.code.coding[0]</td>
           <td>not-found</td>
           <td>A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated</td>
           <td/>
@@ -198,7 +190,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[10].resource/*Observation/observation-eicr-status-001*/.code.coding[0]</td>
+          <td>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.section[1].extension[1].value.ofType(CodeableConcept).coding[0]</td>
           <td>not-found</td>
           <td>A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated</td>
           <td/>
@@ -230,7 +222,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.subject</td>
+          <td>Bundle.entry[6].resource/*Observation/observation-rr-covid19-001*/.subject</td>
           <td>required</td>
           <td>Entry 0 matches the reference Patient/patient-saga-anderson-001 by type and id but it's fullUrl urn:uuid:2efff959-4359-458b-8b69-f1c60f5070bc does not match the full target URL urn:uuid:patient-saga-anderson-001 by Bundle resolution rules</td>
           <td/>
@@ -238,7 +230,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.subject</td>
+          <td>Bundle.entry[7].resource/*Observation/observation-condition-status-001*/.subject</td>
           <td>required</td>
           <td>Entry 0 matches the reference Patient/patient-saga-anderson-001 by type and id but it's fullUrl urn:uuid:2efff959-4359-458b-8b69-f1c60f5070bc does not match the full target URL urn:uuid:patient-saga-anderson-001 by Bundle resolution rules</td>
           <td/>
@@ -246,7 +238,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[8].resource/*Observation/observation-rr-covid19-001*/.subject</td>
+          <td>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.subject</td>
           <td>required</td>
           <td>Entry 0 matches the reference Patient/patient-saga-anderson-001 by type and id but it's fullUrl urn:uuid:2efff959-4359-458b-8b69-f1c60f5070bc does not match the full target URL urn:uuid:patient-saga-anderson-001 by Bundle resolution rules</td>
           <td/>
@@ -254,7 +246,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[9].resource/*Observation/observation-condition-status-001*/.subject</td>
+          <td>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.subject</td>
           <td>required</td>
           <td>Entry 0 matches the reference Patient/patient-saga-anderson-001 by type and id but it's fullUrl urn:uuid:2efff959-4359-458b-8b69-f1c60f5070bc does not match the full target URL urn:uuid:patient-saga-anderson-001 by Bundle resolution rules</td>
           <td/>
@@ -262,7 +254,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.author[0]</td>
+          <td>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.author[0]</td>
           <td>required</td>
           <td>Entry 1 matches the reference Practitioner/practitioner-emma-nelson-001 by type and id but it's fullUrl urn:uuid:d4a6b124-0aea-4b5d-9453-ba70f7770d26 does not match the full target URL urn:uuid:practitioner-emma-nelson-001 by Bundle resolution rules</td>
           <td/>
@@ -270,17 +262,9 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.extension[1].value.ofType(Reference)</td>
+          <td>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.extension[1].value.ofType(Reference)</td>
           <td>required</td>
           <td>Entry 1 matches the reference Practitioner/practitioner-emma-nelson-001 by type and id but it's fullUrl urn:uuid:d4a6b124-0aea-4b5d-9453-ba70f7770d26 does not match the full target URL urn:uuid:practitioner-emma-nelson-001 by Bundle resolution rules</td>
-          <td/>
-          <td>InstanceValidator</td>
-        </tr>
-        <tr>
-          <td>warning</td>
-          <td>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[1].extension[0].extension[0].value.ofType(Reference)</td>
-          <td>required</td>
-          <td>Entry 10 matches the reference Observation/observation-eicr-status-001 by type and id but it's fullUrl urn:uuid:bdeb53b2-b19a-4d3d-a110-35115fd8a486 does not match the full target URL urn:uuid:observation-eicr-status-001 by Bundle resolution rules</td>
           <td/>
           <td>InstanceValidator</td>
         </tr>
@@ -294,7 +278,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.custodian</td>
+          <td>Bundle.entry[6].resource/*Observation/observation-rr-covid19-001*/.performer[0]</td>
           <td>required</td>
           <td>Entry 2 matches the reference Organization/organization-nelson-family-practice-001 by type and id but it's fullUrl urn:uuid:e591b5a8-06f5-4ca6-a074-527f9a17ab0f does not match the full target URL urn:uuid:organization-nelson-family-practice-001 by Bundle resolution rules</td>
           <td/>
@@ -302,7 +286,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.author[0]</td>
+          <td>Bundle.entry[7].resource/*Observation/observation-condition-status-001*/.performer[0]</td>
           <td>required</td>
           <td>Entry 2 matches the reference Organization/organization-nelson-family-practice-001 by type and id but it's fullUrl urn:uuid:e591b5a8-06f5-4ca6-a074-527f9a17ab0f does not match the full target URL urn:uuid:organization-nelson-family-practice-001 by Bundle resolution rules</td>
           <td/>
@@ -310,7 +294,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.custodian</td>
+          <td>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.custodian</td>
           <td>required</td>
           <td>Entry 2 matches the reference Organization/organization-nelson-family-practice-001 by type and id but it's fullUrl urn:uuid:e591b5a8-06f5-4ca6-a074-527f9a17ab0f does not match the full target URL urn:uuid:organization-nelson-family-practice-001 by Bundle resolution rules</td>
           <td/>
@@ -318,7 +302,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[8].resource/*Observation/observation-rr-covid19-001*/.performer[0]</td>
+          <td>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.author[0]</td>
           <td>required</td>
           <td>Entry 2 matches the reference Organization/organization-nelson-family-practice-001 by type and id but it's fullUrl urn:uuid:e591b5a8-06f5-4ca6-a074-527f9a17ab0f does not match the full target URL urn:uuid:organization-nelson-family-practice-001 by Bundle resolution rules</td>
           <td/>
@@ -326,7 +310,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[9].resource/*Observation/observation-condition-status-001*/.performer[0]</td>
+          <td>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.custodian</td>
           <td>required</td>
           <td>Entry 2 matches the reference Organization/organization-nelson-family-practice-001 by type and id but it's fullUrl urn:uuid:e591b5a8-06f5-4ca6-a074-527f9a17ab0f does not match the full target URL urn:uuid:organization-nelson-family-practice-001 by Bundle resolution rules</td>
           <td/>
@@ -350,7 +334,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.encounter</td>
+          <td>Bundle.entry[6].resource/*Observation/observation-rr-covid19-001*/.encounter</td>
           <td>required</td>
           <td>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</td>
           <td/>
@@ -358,7 +342,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.section[0].entry[0]</td>
+          <td>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.encounter</td>
           <td>required</td>
           <td>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</td>
           <td/>
@@ -366,7 +350,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.section[1].entry[0]</td>
+          <td>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.section[0].entry[0]</td>
           <td>required</td>
           <td>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</td>
           <td/>
@@ -374,7 +358,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.section[2].entry[0]</td>
+          <td>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.section[1].entry[0]</td>
           <td>required</td>
           <td>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</td>
           <td/>
@@ -382,7 +366,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.section[3].entry[0]</td>
+          <td>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.section[2].entry[0]</td>
           <td>required</td>
           <td>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</td>
           <td/>
@@ -390,7 +374,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.section[5].entry[0]</td>
+          <td>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.section[3].entry[0]</td>
           <td>required</td>
           <td>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</td>
           <td/>
@@ -398,7 +382,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.encounter</td>
+          <td>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.section[5].entry[0]</td>
           <td>required</td>
           <td>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</td>
           <td/>
@@ -406,7 +390,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[8].resource/*Observation/observation-rr-covid19-001*/.encounter</td>
+          <td>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.encounter</td>
           <td>required</td>
           <td>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</td>
           <td/>
@@ -414,17 +398,25 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[0].entry[0]</td>
+          <td>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.section[0].entry[0]</td>
           <td>required</td>
-          <td>Entry 8 matches the reference Observation/observation-rr-covid19-001 by type and id but it's fullUrl urn:uuid:a228ecdc-1fd9-46b2-a01c-37f9dd5b73ac does not match the full target URL urn:uuid:observation-rr-covid19-001 by Bundle resolution rules</td>
+          <td>Entry 6 matches the reference Observation/observation-rr-covid19-001 by type and id but it's fullUrl urn:uuid:a228ecdc-1fd9-46b2-a01c-37f9dd5b73ac does not match the full target URL urn:uuid:observation-rr-covid19-001 by Bundle resolution rules</td>
           <td/>
           <td>InstanceValidator</td>
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[1].entry[0]</td>
+          <td>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.section[1].entry[0]</td>
           <td>required</td>
-          <td>Entry 8 matches the reference Observation/observation-rr-covid19-001 by type and id but it's fullUrl urn:uuid:a228ecdc-1fd9-46b2-a01c-37f9dd5b73ac does not match the full target URL urn:uuid:observation-rr-covid19-001 by Bundle resolution rules</td>
+          <td>Entry 6 matches the reference Observation/observation-rr-covid19-001 by type and id but it's fullUrl urn:uuid:a228ecdc-1fd9-46b2-a01c-37f9dd5b73ac does not match the full target URL urn:uuid:observation-rr-covid19-001 by Bundle resolution rules</td>
+          <td/>
+          <td>InstanceValidator</td>
+        </tr>
+        <tr>
+          <td>warning</td>
+          <td>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.section[1].extension[0].extension[0].value.ofType(Reference)</td>
+          <td>required</td>
+          <td>Entry 8 matches the reference Observation/observation-eicr-status-001 by type and id but it's fullUrl urn:uuid:bdeb53b2-b19a-4d3d-a110-35115fd8a486 does not match the full target URL urn:uuid:observation-eicr-status-001 by Bundle resolution rules</td>
           <td/>
           <td>InstanceValidator</td>
         </tr>
@@ -446,7 +438,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[8].resource/*Observation/observation-rr-covid19-001*/.meta.profile[0]</td>
+          <td>Bundle.entry[6].resource/*Observation/observation-rr-covid19-001*/.meta.profile[0]</td>
           <td>structure</td>
           <td>Profile reference 'http://hl7.org/fhir/us/ecr/StructureDefinition/rr-observation' has not been checked because it could not be found, and fetching it resulted in the error org.hl7.fhir.r4.utils.client.EFhirClientException: Error reading Http Response from http://hl7.org/fhir/us/ecr: Error parsing JSON source: Unexpected char 'T' in json stream at Line 1 (path=[null])</td>
           <td/>
@@ -454,7 +446,7 @@
         </tr>
         <tr>
           <td>warning</td>
-          <td>Bundle.entry[8].resource</td>
+          <td>Bundle.entry[6].resource/*Observation/observation-rr-covid19-001*/</td>
           <td>invariant</td>
           <td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td>
           <td/>
@@ -468,7 +460,7 @@
   </extension>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
-      <valueInteger value="504"/>
+      <valueInteger value="635"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
       <valueInteger value="8"/>
@@ -484,11 +476,11 @@
     <details>
       <text value="Slice 'Composition.extension:sliceExtensionVersionNumber': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice"/>
     </details>
-    <expression value="Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/"/>
+    <expression value="Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
-      <valueInteger value="504"/>
+      <valueInteger value="635"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
       <valueInteger value="8"/>
@@ -504,11 +496,11 @@
     <details>
       <text value="Slice 'Composition.section:sliceHistoryOfPresentIllnessSection': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice"/>
     </details>
-    <expression value="Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/"/>
+    <expression value="Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
-      <valueInteger value="504"/>
+      <valueInteger value="635"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
       <valueInteger value="8"/>
@@ -524,11 +516,11 @@
     <details>
       <text value="Slice 'Composition.section:sliceReasonForVisitSection': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice"/>
     </details>
-    <expression value="Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/"/>
+    <expression value="Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
-      <valueInteger value="504"/>
+      <valueInteger value="635"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
       <valueInteger value="8"/>
@@ -544,11 +536,11 @@
     <details>
       <text value="Slice 'Composition.section:sliceResultsSection': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice"/>
     </details>
-    <expression value="Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/"/>
+    <expression value="Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
-      <valueInteger value="631"/>
+      <valueInteger value="762"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
       <valueInteger value="12"/>
@@ -564,11 +556,11 @@
     <details>
       <text value="Slice 'Composition.section:sliceProblemSection.entry:sliceEICRCondition': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice"/>
     </details>
-    <expression value="Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.section[5]"/>
+    <expression value="Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.section[5]"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
-      <valueInteger value="697"/>
+      <valueInteger value="828"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
       <valueInteger value="8"/>
@@ -584,11 +576,11 @@
     <details>
       <text value="Slice 'Composition.section:sliceEICRSection': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1). Note that other slices are allowed in addition to this required slice"/>
     </details>
-    <expression value="Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/"/>
+    <expression value="Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
-      <valueInteger value="775"/>
+      <valueInteger value="906"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
       <valueInteger value="12"/>
@@ -604,11 +596,11 @@
     <details>
       <text value="Slice 'Composition.section:sliceRRSummarySection.entry:sliceRRCondition': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1). Note that other slices are allowed in addition to this required slice"/>
     </details>
-    <expression value="Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[1]"/>
+    <expression value="Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.section[1]"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
-      <valueInteger value="775"/>
+      <valueInteger value="906"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
       <valueInteger value="12"/>
@@ -624,7 +616,7 @@
     <details>
       <text value="Slice 'Composition.section:sliceRRSummarySection.entry:sliceRRSummary': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1). Note that other slices are allowed in addition to this required slice"/>
     </details>
-    <expression value="Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[1]"/>
+    <expression value="Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.section[1]"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
@@ -668,41 +660,7 @@
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
-      <valueInteger value="791"/>
-    </extension>
-    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
-      <valueInteger value="18"/>
-    </extension>
-    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
-      <valueString value="TerminologyEngine"/>
-    </extension>
-    <severity value="warning"/>
-    <code value="code-invalid"/>
-    <details>
-      <text value="A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.5|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found"/>
-    </details>
-    <expression value="Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[1].extension[1].value.ofType(CodeableConcept)"/>
-  </issue>
-  <issue>
-    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
-      <valueInteger value="791"/>
-    </extension>
-    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
-      <valueInteger value="18"/>
-    </extension>
-    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
-      <valueString value="TerminologyEngine"/>
-    </extension>
-    <severity value="warning"/>
-    <code value="code-invalid"/>
-    <details>
-      <text value="Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.5|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found"/>
-    </details>
-    <expression value="Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[1].extension[1].value.ofType(CodeableConcept)"/>
-  </issue>
-  <issue>
-    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
-      <valueInteger value="945"/>
+      <valueInteger value="618"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
       <valueInteger value="10"/>
@@ -715,11 +673,28 @@
     <details>
       <text value="Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.8|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found"/>
     </details>
-    <expression value="Bundle.entry[10].resource/*Observation/observation-eicr-status-001*/.code"/>
+    <expression value="Bundle.entry[8].resource/*Observation/observation-eicr-status-001*/.code"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
-      <valueInteger value="932"/>
+      <valueInteger value="922"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+      <valueInteger value="18"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+      <valueString value="TerminologyEngine"/>
+    </extension>
+    <severity value="warning"/>
+    <code value="code-invalid"/>
+    <details>
+      <text value="Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.5|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found"/>
+    </details>
+    <expression value="Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.section[1].extension[1].value.ofType(CodeableConcept)"/>
+  </issue>
+  <issue>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+      <valueInteger value="605"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
       <valueInteger value="8"/>
@@ -735,11 +710,11 @@
     <details>
       <text value="Best Practice Recommendation: In general, all observations should have a performer"/>
     </details>
-    <expression value="Bundle.entry[10].resource/*Observation/observation-eicr-status-001*/"/>
+    <expression value="Bundle.entry[8].resource/*Observation/observation-eicr-status-001*/"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
-      <valueInteger value="932"/>
+      <valueInteger value="605"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
       <valueInteger value="8"/>
@@ -755,11 +730,11 @@
     <details>
       <text value="Best Practice Recommendation: In general, all observations should have a performer"/>
     </details>
-    <expression value="Bundle.entry[10].resource"/>
+    <expression value="Bundle.entry[8].resource"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
-      <valueInteger value="932"/>
+      <valueInteger value="605"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
       <valueInteger value="8"/>
@@ -775,11 +750,11 @@
     <details>
       <text value="Best Practice Recommendation: In general, all observations should have a subject"/>
     </details>
-    <expression value="Bundle.entry[10].resource/*Observation/observation-eicr-status-001*/"/>
+    <expression value="Bundle.entry[8].resource/*Observation/observation-eicr-status-001*/"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
-      <valueInteger value="932"/>
+      <valueInteger value="605"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
       <valueInteger value="8"/>
@@ -795,11 +770,11 @@
     <details>
       <text value="Best Practice Recommendation: In general, all observations should have a subject"/>
     </details>
-    <expression value="Bundle.entry[10].resource"/>
+    <expression value="Bundle.entry[8].resource"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
-      <valueInteger value="932"/>
+      <valueInteger value="605"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
       <valueInteger value="8"/>
@@ -815,11 +790,11 @@
     <details>
       <text value="Best Practice Recommendation: In general, all observations should have an effective[x] ()"/>
     </details>
-    <expression value="Bundle.entry[10].resource/*Observation/observation-eicr-status-001*/"/>
+    <expression value="Bundle.entry[8].resource/*Observation/observation-eicr-status-001*/"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
-      <valueInteger value="932"/>
+      <valueInteger value="605"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
       <valueInteger value="8"/>
@@ -835,45 +810,11 @@
     <details>
       <text value="Best Practice Recommendation: In general, all observations should have an effective[x] ()"/>
     </details>
-    <expression value="Bundle.entry[10].resource"/>
+    <expression value="Bundle.entry[8].resource"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
-      <valueInteger value="791"/>
-    </extension>
-    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
-      <valueInteger value="18"/>
-    </extension>
-    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
-      <valueString value="TerminologyEngine"/>
-    </extension>
-    <severity value="warning"/>
-    <code value="not-found"/>
-    <details>
-      <text value="A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated"/>
-    </details>
-    <expression value="Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[1].extension[1].value.ofType(CodeableConcept).coding[0].system"/>
-  </issue>
-  <issue>
-    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
-      <valueInteger value="791"/>
-    </extension>
-    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
-      <valueInteger value="18"/>
-    </extension>
-    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
-      <valueString value="TerminologyEngine"/>
-    </extension>
-    <severity value="warning"/>
-    <code value="not-found"/>
-    <details>
-      <text value="A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated"/>
-    </details>
-    <expression value="Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[1].extension[1].value.ofType(CodeableConcept).coding[0]"/>
-  </issue>
-  <issue>
-    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
-      <valueInteger value="945"/>
+      <valueInteger value="618"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
       <valueInteger value="10"/>
@@ -886,7 +827,41 @@
     <details>
       <text value="A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated"/>
     </details>
-    <expression value="Bundle.entry[10].resource/*Observation/observation-eicr-status-001*/.code.coding[0]"/>
+    <expression value="Bundle.entry[8].resource/*Observation/observation-eicr-status-001*/.code.coding[0].system"/>
+  </issue>
+  <issue>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+      <valueInteger value="618"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+      <valueInteger value="10"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+      <valueString value="TerminologyEngine"/>
+    </extension>
+    <severity value="warning"/>
+    <code value="not-found"/>
+    <details>
+      <text value="A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated"/>
+    </details>
+    <expression value="Bundle.entry[8].resource/*Observation/observation-eicr-status-001*/.code.coding[0]"/>
+  </issue>
+  <issue>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+      <valueInteger value="922"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+      <valueInteger value="18"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+      <valueString value="TerminologyEngine"/>
+    </extension>
+    <severity value="warning"/>
+    <code value="not-found"/>
+    <details>
+      <text value="A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated"/>
+    </details>
+    <expression value="Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.section[1].extension[1].value.ofType(CodeableConcept).coding[0]"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
@@ -942,7 +917,7 @@
     <details>
       <text value="Entry 0 matches the reference Patient/patient-saga-anderson-001 by type and id but it's fullUrl urn:uuid:2efff959-4359-458b-8b69-f1c60f5070bc does not match the full target URL urn:uuid:patient-saga-anderson-001 by Bundle resolution rules"/>
     </details>
-    <expression value="Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.subject"/>
+    <expression value="Bundle.entry[6].resource/*Observation/observation-rr-covid19-001*/.subject"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
@@ -956,7 +931,7 @@
     <details>
       <text value="Entry 0 matches the reference Patient/patient-saga-anderson-001 by type and id but it's fullUrl urn:uuid:2efff959-4359-458b-8b69-f1c60f5070bc does not match the full target URL urn:uuid:patient-saga-anderson-001 by Bundle resolution rules"/>
     </details>
-    <expression value="Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.subject"/>
+    <expression value="Bundle.entry[7].resource/*Observation/observation-condition-status-001*/.subject"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
@@ -970,7 +945,7 @@
     <details>
       <text value="Entry 0 matches the reference Patient/patient-saga-anderson-001 by type and id but it's fullUrl urn:uuid:2efff959-4359-458b-8b69-f1c60f5070bc does not match the full target URL urn:uuid:patient-saga-anderson-001 by Bundle resolution rules"/>
     </details>
-    <expression value="Bundle.entry[8].resource/*Observation/observation-rr-covid19-001*/.subject"/>
+    <expression value="Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.subject"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
@@ -984,7 +959,7 @@
     <details>
       <text value="Entry 0 matches the reference Patient/patient-saga-anderson-001 by type and id but it's fullUrl urn:uuid:2efff959-4359-458b-8b69-f1c60f5070bc does not match the full target URL urn:uuid:patient-saga-anderson-001 by Bundle resolution rules"/>
     </details>
-    <expression value="Bundle.entry[9].resource/*Observation/observation-condition-status-001*/.subject"/>
+    <expression value="Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.subject"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
@@ -998,7 +973,7 @@
     <details>
       <text value="Entry 1 matches the reference Practitioner/practitioner-emma-nelson-001 by type and id but it's fullUrl urn:uuid:d4a6b124-0aea-4b5d-9453-ba70f7770d26 does not match the full target URL urn:uuid:practitioner-emma-nelson-001 by Bundle resolution rules"/>
     </details>
-    <expression value="Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.author[0]"/>
+    <expression value="Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.author[0]"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
@@ -1012,21 +987,7 @@
     <details>
       <text value="Entry 1 matches the reference Practitioner/practitioner-emma-nelson-001 by type and id but it's fullUrl urn:uuid:d4a6b124-0aea-4b5d-9453-ba70f7770d26 does not match the full target URL urn:uuid:practitioner-emma-nelson-001 by Bundle resolution rules"/>
     </details>
-    <expression value="Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.extension[1].value.ofType(Reference)"/>
-  </issue>
-  <issue>
-    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
-      <valueString value="InstanceValidator"/>
-    </extension>
-    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
-      <valueCode value="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"/>
-    </extension>
-    <severity value="warning"/>
-    <code value="required"/>
-    <details>
-      <text value="Entry 10 matches the reference Observation/observation-eicr-status-001 by type and id but it's fullUrl urn:uuid:bdeb53b2-b19a-4d3d-a110-35115fd8a486 does not match the full target URL urn:uuid:observation-eicr-status-001 by Bundle resolution rules"/>
-    </details>
-    <expression value="Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[1].extension[0].extension[0].value.ofType(Reference)"/>
+    <expression value="Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.extension[1].value.ofType(Reference)"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
@@ -1054,7 +1015,7 @@
     <details>
       <text value="Entry 2 matches the reference Organization/organization-nelson-family-practice-001 by type and id but it's fullUrl urn:uuid:e591b5a8-06f5-4ca6-a074-527f9a17ab0f does not match the full target URL urn:uuid:organization-nelson-family-practice-001 by Bundle resolution rules"/>
     </details>
-    <expression value="Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.custodian"/>
+    <expression value="Bundle.entry[6].resource/*Observation/observation-rr-covid19-001*/.performer[0]"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
@@ -1068,7 +1029,7 @@
     <details>
       <text value="Entry 2 matches the reference Organization/organization-nelson-family-practice-001 by type and id but it's fullUrl urn:uuid:e591b5a8-06f5-4ca6-a074-527f9a17ab0f does not match the full target URL urn:uuid:organization-nelson-family-practice-001 by Bundle resolution rules"/>
     </details>
-    <expression value="Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.author[0]"/>
+    <expression value="Bundle.entry[7].resource/*Observation/observation-condition-status-001*/.performer[0]"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
@@ -1082,7 +1043,7 @@
     <details>
       <text value="Entry 2 matches the reference Organization/organization-nelson-family-practice-001 by type and id but it's fullUrl urn:uuid:e591b5a8-06f5-4ca6-a074-527f9a17ab0f does not match the full target URL urn:uuid:organization-nelson-family-practice-001 by Bundle resolution rules"/>
     </details>
-    <expression value="Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.custodian"/>
+    <expression value="Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.custodian"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
@@ -1096,7 +1057,7 @@
     <details>
       <text value="Entry 2 matches the reference Organization/organization-nelson-family-practice-001 by type and id but it's fullUrl urn:uuid:e591b5a8-06f5-4ca6-a074-527f9a17ab0f does not match the full target URL urn:uuid:organization-nelson-family-practice-001 by Bundle resolution rules"/>
     </details>
-    <expression value="Bundle.entry[8].resource/*Observation/observation-rr-covid19-001*/.performer[0]"/>
+    <expression value="Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.author[0]"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
@@ -1110,7 +1071,7 @@
     <details>
       <text value="Entry 2 matches the reference Organization/organization-nelson-family-practice-001 by type and id but it's fullUrl urn:uuid:e591b5a8-06f5-4ca6-a074-527f9a17ab0f does not match the full target URL urn:uuid:organization-nelson-family-practice-001 by Bundle resolution rules"/>
     </details>
-    <expression value="Bundle.entry[9].resource/*Observation/observation-condition-status-001*/.performer[0]"/>
+    <expression value="Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.custodian"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
@@ -1152,7 +1113,7 @@
     <details>
       <text value="Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules"/>
     </details>
-    <expression value="Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.encounter"/>
+    <expression value="Bundle.entry[6].resource/*Observation/observation-rr-covid19-001*/.encounter"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
@@ -1166,7 +1127,7 @@
     <details>
       <text value="Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules"/>
     </details>
-    <expression value="Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.section[0].entry[0]"/>
+    <expression value="Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.encounter"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
@@ -1180,7 +1141,7 @@
     <details>
       <text value="Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules"/>
     </details>
-    <expression value="Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.section[1].entry[0]"/>
+    <expression value="Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.section[0].entry[0]"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
@@ -1194,7 +1155,7 @@
     <details>
       <text value="Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules"/>
     </details>
-    <expression value="Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.section[2].entry[0]"/>
+    <expression value="Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.section[1].entry[0]"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
@@ -1208,7 +1169,7 @@
     <details>
       <text value="Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules"/>
     </details>
-    <expression value="Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.section[3].entry[0]"/>
+    <expression value="Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.section[2].entry[0]"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
@@ -1222,7 +1183,7 @@
     <details>
       <text value="Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules"/>
     </details>
-    <expression value="Bundle.entry[6].resource/*Composition/composition-eicr-covid19-001*/.section[5].entry[0]"/>
+    <expression value="Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.section[3].entry[0]"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
@@ -1236,7 +1197,7 @@
     <details>
       <text value="Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules"/>
     </details>
-    <expression value="Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.encounter"/>
+    <expression value="Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.section[5].entry[0]"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
@@ -1250,7 +1211,7 @@
     <details>
       <text value="Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules"/>
     </details>
-    <expression value="Bundle.entry[8].resource/*Observation/observation-rr-covid19-001*/.encounter"/>
+    <expression value="Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.encounter"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
@@ -1262,9 +1223,9 @@
     <severity value="warning"/>
     <code value="required"/>
     <details>
-      <text value="Entry 8 matches the reference Observation/observation-rr-covid19-001 by type and id but it's fullUrl urn:uuid:a228ecdc-1fd9-46b2-a01c-37f9dd5b73ac does not match the full target URL urn:uuid:observation-rr-covid19-001 by Bundle resolution rules"/>
+      <text value="Entry 6 matches the reference Observation/observation-rr-covid19-001 by type and id but it's fullUrl urn:uuid:a228ecdc-1fd9-46b2-a01c-37f9dd5b73ac does not match the full target URL urn:uuid:observation-rr-covid19-001 by Bundle resolution rules"/>
     </details>
-    <expression value="Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[0].entry[0]"/>
+    <expression value="Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.section[0].entry[0]"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
@@ -1276,9 +1237,23 @@
     <severity value="warning"/>
     <code value="required"/>
     <details>
-      <text value="Entry 8 matches the reference Observation/observation-rr-covid19-001 by type and id but it's fullUrl urn:uuid:a228ecdc-1fd9-46b2-a01c-37f9dd5b73ac does not match the full target URL urn:uuid:observation-rr-covid19-001 by Bundle resolution rules"/>
+      <text value="Entry 6 matches the reference Observation/observation-rr-covid19-001 by type and id but it's fullUrl urn:uuid:a228ecdc-1fd9-46b2-a01c-37f9dd5b73ac does not match the full target URL urn:uuid:observation-rr-covid19-001 by Bundle resolution rules"/>
     </details>
-    <expression value="Bundle.entry[7].resource/*Composition/composition-rr-covid19-001*/.section[1].entry[0]"/>
+    <expression value="Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.section[1].entry[0]"/>
+  </issue>
+  <issue>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+      <valueString value="InstanceValidator"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+      <valueCode value="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"/>
+    </extension>
+    <severity value="warning"/>
+    <code value="required"/>
+    <details>
+      <text value="Entry 8 matches the reference Observation/observation-eicr-status-001 by type and id but it's fullUrl urn:uuid:bdeb53b2-b19a-4d3d-a110-35115fd8a486 does not match the full target URL urn:uuid:observation-eicr-status-001 by Bundle resolution rules"/>
+    </details>
+    <expression value="Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.section[1].extension[0].extension[0].value.ofType(Reference)"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
@@ -1322,7 +1297,7 @@
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
-      <valueInteger value="831"/>
+      <valueInteger value="504"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
       <valueInteger value="8"/>
@@ -1338,11 +1313,11 @@
     <details>
       <text value="Profile reference 'http://hl7.org/fhir/us/ecr/StructureDefinition/rr-observation' has not been checked because it could not be found, and fetching it resulted in the error org.hl7.fhir.r4.utils.client.EFhirClientException: Error reading Http Response from http://hl7.org/fhir/us/ecr: Error parsing JSON source: Unexpected char 'T' in json stream at Line 1 (path=[null])"/>
     </details>
-    <expression value="Bundle.entry[8].resource/*Observation/observation-rr-covid19-001*/.meta.profile[0]"/>
+    <expression value="Bundle.entry[6].resource/*Observation/observation-rr-covid19-001*/.meta.profile[0]"/>
   </issue>
   <issue>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
-      <valueInteger value="831"/>
+      <valueInteger value="504"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
       <valueInteger value="8"/>
@@ -1355,6 +1330,6 @@
     <details>
       <text value="Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"/>
     </details>
-    <expression value="Bundle.entry[8].resource"/>
+    <expression value="Bundle.entry[6].resource/*Observation/observation-rr-covid19-001*/"/>
   </issue>
 </OperationOutcome>
