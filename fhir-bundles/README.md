@@ -1142,3 +1142,363 @@ The **Composition (RR - Reportability Response)** resource is the core document 
 
 - `3 errors, 4 warnings, 0 hints. Generated Sep 27, 2024, 9:28:07 PM by Validator Version 6.3.29 (Git# 53ec74518475). Built 2024-09-26T12:30:54.127Z (32 hours old) (547ms)`
   - These 3 errors are similar to the eCR FHIR IG's example bundle named `Composition-composition-rr-one-cond-one-pha.json`, which also has the same `Slice` errors that this example has.
+
+## HAPI FHIR Server
+
+Ensuring that a STLT is also able to store converted CDA eICR and RR FHIR bundles in a FHIR server is a critical piece of interoperability. It is also a great way to ensure that the conversions produced by the custom Liquid templates for the Microsoft FHIR-Converter are meeting the standard and that there are no significant issues.
+
+### Running the HAPI FHIR Server
+
+Running a local version of the HAPI FHIR server using the following Docker compose file:
+
+```yaml
+version: "3.7"
+
+services:
+  fhir:
+    container_name: fhir
+    image: "hapiproject/hapi:latest"
+    ports:
+      - "8080:8080"
+    environment:
+      - spring.datasource.url=jdbc:postgresql://db:5432/hapi
+      - spring.datasource.username=admin
+      - spring.datasource.password=admin
+      - spring.datasource.driverClassName=org.postgresql.Driver
+      - spring.jpa.properties.hibernate.dialect=ca.uhn.fhir.jpa.model.dialect.HapiFhirPostgresDialect
+      - spring.jpa.properties.hibernate.search.enabled=false
+    depends_on:
+      - db
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: admin
+      POSTGRES_USER: admin
+      POSTGRES_DB: hapi
+    volumes:
+      - ./hapi.postgres.data:/var/lib/postgresql/data
+
+volumes:
+  hapi-postgres-data:
+```
+
+### Uploading the FHIR Bundles
+
+When using the `eicr-rr-batch-bundle.json` at `http://localhost:8080/fhir` this is the response:
+
+```json
+{
+  "resourceType": "Bundle",
+  "id": "33ad7aa8-31cc-4bc3-9151-649cbd38aecd",
+  "type": "batch-response",
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://localhost:8080/fhir"
+    }
+  ],
+  "entry": [
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Patient/patient-saga-anderson-003/_history/1",
+        "etag": "1",
+        "lastModified": "2024-09-30T17:27:47.148+00:00",
+        "outcome": {
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "information",
+              "code": "informational",
+              "details": {
+                "coding": [
+                  {
+                    "system": "https://hapifhir.io/fhir/CodeSystem/hapi-fhir-storage-response-code",
+                    "code": "SUCCESSFUL_UPDATE_AS_CREATE",
+                    "display": "Update as create succeeded."
+                  }
+                ]
+              },
+              "diagnostics": "Successfully created resource \"Patient/patient-saga-anderson-003/_history/1\" using update as create (ie. create with client assigned ID). Took 4ms."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Practitioner/practitioner-emma-nelson-003/_history/1",
+        "etag": "1",
+        "lastModified": "2024-09-30T17:27:47.171+00:00",
+        "outcome": {
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "information",
+              "code": "informational",
+              "details": {
+                "coding": [
+                  {
+                    "system": "https://hapifhir.io/fhir/CodeSystem/hapi-fhir-storage-response-code",
+                    "code": "SUCCESSFUL_UPDATE_AS_CREATE",
+                    "display": "Update as create succeeded."
+                  }
+                ]
+              },
+              "diagnostics": "Successfully created resource \"Practitioner/practitioner-emma-nelson-003/_history/1\" using update as create (ie. create with client assigned ID). Took 2ms."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Organization/organization-nelson-family-practice-003/_history/1",
+        "etag": "1",
+        "lastModified": "2024-09-30T17:27:47.181+00:00",
+        "outcome": {
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "information",
+              "code": "informational",
+              "details": {
+                "coding": [
+                  {
+                    "system": "https://hapifhir.io/fhir/CodeSystem/hapi-fhir-storage-response-code",
+                    "code": "SUCCESSFUL_UPDATE_AS_CREATE",
+                    "display": "Update as create succeeded."
+                  }
+                ]
+              },
+              "diagnostics": "Successfully created resource \"Organization/organization-nelson-family-practice-003/_history/1\" using update as create (ie. create with client assigned ID). Took 1ms."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Encounter/encounter-eicr-saga-anderson-003/_history/1",
+        "etag": "1",
+        "lastModified": "2024-09-30T17:27:47.191+00:00",
+        "outcome": {
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "information",
+              "code": "informational",
+              "details": {
+                "coding": [
+                  {
+                    "system": "https://hapifhir.io/fhir/CodeSystem/hapi-fhir-storage-response-code",
+                    "code": "SUCCESSFUL_UPDATE_AS_CREATE",
+                    "display": "Update as create succeeded."
+                  }
+                ]
+              },
+              "diagnostics": "Successfully created resource \"Encounter/encounter-eicr-saga-anderson-003/_history/1\" using update as create (ie. create with client assigned ID). Took 1ms."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Condition/condition-covid19-003/_history/1",
+        "etag": "1",
+        "lastModified": "2024-09-30T17:27:47.200+00:00",
+        "outcome": {
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "information",
+              "code": "informational",
+              "details": {
+                "coding": [
+                  {
+                    "system": "https://hapifhir.io/fhir/CodeSystem/hapi-fhir-storage-response-code",
+                    "code": "SUCCESSFUL_UPDATE_AS_CREATE",
+                    "display": "Update as create succeeded."
+                  }
+                ]
+              },
+              "diagnostics": "Successfully created resource \"Condition/condition-covid19-003/_history/1\" using update as create (ie. create with client assigned ID). Took 1ms."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/observation-covid19-pcr-003/_history/1",
+        "etag": "1",
+        "lastModified": "2024-09-30T17:27:47.210+00:00",
+        "outcome": {
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "information",
+              "code": "informational",
+              "details": {
+                "coding": [
+                  {
+                    "system": "https://hapifhir.io/fhir/CodeSystem/hapi-fhir-storage-response-code",
+                    "code": "SUCCESSFUL_UPDATE_AS_CREATE",
+                    "display": "Update as create succeeded."
+                  }
+                ]
+              },
+              "diagnostics": "Successfully created resource \"Observation/observation-covid19-pcr-003/_history/1\" using update as create (ie. create with client assigned ID). Took 4ms."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/observation-rr-covid19-003/_history/1",
+        "etag": "1",
+        "lastModified": "2024-09-30T17:27:47.225+00:00",
+        "outcome": {
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "information",
+              "code": "informational",
+              "details": {
+                "coding": [
+                  {
+                    "system": "https://hapifhir.io/fhir/CodeSystem/hapi-fhir-storage-response-code",
+                    "code": "SUCCESSFUL_UPDATE_AS_CREATE",
+                    "display": "Update as create succeeded."
+                  }
+                ]
+              },
+              "diagnostics": "Successfully created resource \"Observation/observation-rr-covid19-003/_history/1\" using update as create (ie. create with client assigned ID). Took 3ms."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/observation-condition-status-003/_history/1",
+        "etag": "1",
+        "lastModified": "2024-09-30T17:27:47.239+00:00",
+        "outcome": {
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "information",
+              "code": "informational",
+              "details": {
+                "coding": [
+                  {
+                    "system": "https://hapifhir.io/fhir/CodeSystem/hapi-fhir-storage-response-code",
+                    "code": "SUCCESSFUL_UPDATE_AS_CREATE",
+                    "display": "Update as create succeeded."
+                  }
+                ]
+              },
+              "diagnostics": "Successfully created resource \"Observation/observation-condition-status-003/_history/1\" using update as create (ie. create with client assigned ID). Took 2ms."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/observation-eicr-status-003/_history/1",
+        "etag": "1",
+        "lastModified": "2024-09-30T17:27:47.251+00:00",
+        "outcome": {
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "information",
+              "code": "informational",
+              "details": {
+                "coding": [
+                  {
+                    "system": "https://hapifhir.io/fhir/CodeSystem/hapi-fhir-storage-response-code",
+                    "code": "SUCCESSFUL_UPDATE_AS_CREATE",
+                    "display": "Update as create succeeded."
+                  }
+                ]
+              },
+              "diagnostics": "Successfully created resource \"Observation/observation-eicr-status-003/_history/1\" using update as create (ie. create with client assigned ID). Took 2ms."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Composition/composition-eicr-covid19-003/_history/1",
+        "etag": "1",
+        "lastModified": "2024-09-30T17:27:47.260+00:00",
+        "outcome": {
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "information",
+              "code": "informational",
+              "details": {
+                "coding": [
+                  {
+                    "system": "https://hapifhir.io/fhir/CodeSystem/hapi-fhir-storage-response-code",
+                    "code": "SUCCESSFUL_UPDATE_AS_CREATE",
+                    "display": "Update as create succeeded."
+                  }
+                ]
+              },
+              "diagnostics": "Successfully created resource \"Composition/composition-eicr-covid19-003/_history/1\" using update as create (ie. create with client assigned ID). Took 2ms."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Composition/composition-rr-covid19-003/_history/1",
+        "etag": "1",
+        "lastModified": "2024-09-30T17:27:47.275+00:00",
+        "outcome": {
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "information",
+              "code": "informational",
+              "details": {
+                "coding": [
+                  {
+                    "system": "https://hapifhir.io/fhir/CodeSystem/hapi-fhir-storage-response-code",
+                    "code": "SUCCESSFUL_UPDATE_AS_CREATE",
+                    "display": "Update as create succeeded."
+                  }
+                ]
+              },
+              "diagnostics": "Successfully created resource \"Composition/composition-rr-covid19-003/_history/1\" using update as create (ie. create with client assigned ID). Took 3ms."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
+```
+
+All resources were successfully created, so we have a batch bundle that leverages both eICR and RR profiles, is valid (save for the few `Slice` related errors that are also present in the eCR IG's sample data), and successfully integrates with the HAPI FHRI server.
