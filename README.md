@@ -14,6 +14,9 @@ You will also need to download and place the `validator_cli.jar` file in the roo
 │   ├── Bundle-bundle-ecr-message-zika.json
 │   ├── ...
 │   └── eICR_TC-Routing_VPD-bundle.json
+├── hapi
+│   ├── docker-compose.yaml
+│   └── README.md
 ├── README.md
 ├── terminology_log.txt
 ├── validate.sh
